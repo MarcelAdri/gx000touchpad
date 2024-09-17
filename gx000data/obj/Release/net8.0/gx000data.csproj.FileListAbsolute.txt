@@ -1,0 +1,16 @@
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\bin\Release\net8.0\gx000data.deps.json
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\bin\Release\net8.0\gx000data.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\bin\Release\net8.0\gx000data.pdb
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\bin\Release\net8.0\GeneralUtilities.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\bin\Release\net8.0\GeneralUtilities.pdb
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\obj\Release\net8.0\gx000data.csproj.AssemblyReference.cache
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\obj\Release\net8.0\gx000data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\obj\Release\net8.0\gx000data.AssemblyInfoInputs.cache
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\obj\Release\net8.0\gx000data.AssemblyInfo.cs
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\obj\Release\net8.0\gx000data.csproj.CoreCompileInputs.cache
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\obj\Release\net8.0\gx000data.sourcelink.json
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\obj\Release\net8.0\gx000data.csproj.Up2Date
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\obj\Release\net8.0\gx000data.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\obj\Release\net8.0\refint\gx000data.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\obj\Release\net8.0\gx000data.pdb
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000data\obj\Release\net8.0\ref\gx000data.dll
