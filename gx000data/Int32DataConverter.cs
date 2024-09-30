@@ -11,6 +11,8 @@
 // 
 //     */
 
+using GeneralUtilities;
+
 namespace gx000data;
 
 /// <summary>
@@ -18,6 +20,7 @@ namespace gx000data;
 /// </summary>
 public class Int32DataConverter : IDataConverter<int>
 {
+    private ByteProcessor _byteProcessor = new(new SystemEndiannessChecker()); 
     /// <summary>
     /// Converts the provided data value to an array of bytes.
     /// </summary>
@@ -25,7 +28,7 @@ public class Int32DataConverter : IDataConverter<int>
     /// <returns>An array of bytes representing the converted data value.</returns>
     public byte[] ToBytes(int dataValue)
     {
-        return GeneralUtilities.GeneralUtilities.StoreLittleEndian(BitConverter.GetBytes(dataValue));
+        return _byteProcessor.StoreLittleEndian(BitConverter.GetBytes(dataValue));
     }
 
     /// <summary>
@@ -35,6 +38,6 @@ public class Int32DataConverter : IDataConverter<int>
     /// <returns>The original data value of type int.</returns>
     public int FromBytes(byte[] bytes)
     {
-        return BitConverter.ToInt32(GeneralUtilities.GeneralUtilities.StoreLittleEndian(bytes));
+        return BitConverter.ToInt32(_byteProcessor.StoreLittleEndian(bytes));
     }
 }

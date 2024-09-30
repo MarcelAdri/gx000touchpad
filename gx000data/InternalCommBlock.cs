@@ -12,6 +12,7 @@
 //     */
 
 using System.Collections.Concurrent;
+using GeneralUtilities;
 
 namespace gx000data;
 
@@ -26,6 +27,8 @@ public static class InternalCommBlock
     private const byte DefaultFiller = 32;
     
     private static readonly ConcurrentDictionary<int, ConcurrentBag<string>> BlockContents;
+
+    private static ByteProcessor _byteProcessor = new(new SystemEndiannessChecker());
 
     static InternalCommBlock()
     {
@@ -170,7 +173,7 @@ public static class InternalCommBlock
         }
 
         var outputList = new List<Variable>();
-        var blockNumber = Convert.ToInt32(GeneralUtilities.GeneralUtilities.StoreLittleEndian(
+        var blockNumber = Convert.ToInt32(_byteProcessor.StoreLittleEndian(
             dataBlock[..VariableDefinitions.ByteSizeOfBlockNumber]));
         foreach (var variableName in BlockContents[blockNumber])
         {
@@ -217,7 +220,7 @@ public static class InternalCommBlock
     /// <returns>The checksum value extracted from the data block.</returns>
     private static ulong ExtractChecksumFromBlock(byte[] dataBlock)
     {
-        return Convert.ToUInt64(GeneralUtilities.GeneralUtilities.StoreLittleEndian(
+        return Convert.ToUInt64(_byteProcessor.StoreLittleEndian(
             dataBlock[(VariableDefinitions.BlockSize - VariableDefinitions.ByteSizeOfChecksum)..]));
     }
 
@@ -317,7 +320,7 @@ public static class InternalCommBlock
     /// <returns>The byte array with the block number added.</returns>
     private static byte[] AddBlockNumber(byte[] blockBytes, int blockNumber)
     {
-        Array.Copy(GeneralUtilities.GeneralUtilities.StoreLittleEndian(BitConverter.GetBytes(blockNumber)),
+        Array.Copy(_byteProcessor.StoreLittleEndian(BitConverter.GetBytes(blockNumber)),
             0,
             blockBytes,
             0,
@@ -362,7 +365,7 @@ public static class InternalCommBlock
             GeneralUtilities.FletcherCheckSum.FletcherTypes.Fletcher64);
         var checkSumOffset = VariableDefinitions.BlockSize - VariableDefinitions.ByteSizeOfChecksum;
         
-        Array.Copy(GeneralUtilities.GeneralUtilities.StoreLittleEndian(BitConverter.GetBytes(checkSum)),
+        Array.Copy(_byteProcessor.StoreLittleEndian(BitConverter.GetBytes(checkSum)),
             0,
             blockBytes,
             checkSumOffset,

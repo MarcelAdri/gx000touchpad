@@ -2,6 +2,10 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9e87d05c_002D6137_002D4678_002D8506_002D8eaadbd1ae8a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CalculateFletcherCheckCalculateChecksumFromBytes_TestVectors_ReturnResult" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::7E46AF65-8E3B-482B-90DB-4DA4A6395AF7::net8.0::gx000touchpadUnitTests.GeneralUtilities.FletcherCheckSumTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7E46AF65-8E3B-482B-90DB-4DA4A6395AF7::net8.0::gx000touchpadUnitTests.GeneralUtilities.ByteProcessorTests.StoreLittleEndian_SystemIsLittleEndian_ArrayUnchanged&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7E46AF65-8E3B-482B-90DB-4DA4A6395AF7::net8.0::gx000touchpadUnitTests.GeneralUtilities.ByteProcessorTests.StoreLittleEndian_SystemIsBigEndian_ArrayReversed&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7E46AF65-8E3B-482B-90DB-4DA4A6395AF7::net8.0::gx000touchpadUnitTests.GeneralUtilities.ByteProcessorTests.StoreLittleEndian_ArrayIsEmpty_ThrowsArgumentOutOfRangeException&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::7E46AF65-8E3B-482B-90DB-4DA4A6395AF7::net8.0::gx000touchpadUnitTests.GeneralUtilities.ByteProcessorTests.StoreLittleEndian_ArrayIsNull_ThrowsArgumentNullException&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
