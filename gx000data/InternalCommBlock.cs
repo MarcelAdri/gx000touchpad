@@ -230,7 +230,7 @@ public static class InternalCommBlock
     {
         return GeneralUtilities.FletcherCheckSum.CalculateChecksumFromBytes(
             dataBlock[..^VariableDefinitions.ByteSizeOfChecksum],
-            GeneralUtilities.FletcherCheckSum.FletcherSizes.FletcherTypes.Fletcher64);
+            GeneralUtilities.FletcherCheckSum.FletcherTypes.Fletcher64);
     }
     /// <summary>
     /// Checks if the checksum of the data block is valid.
@@ -359,7 +359,7 @@ public static class InternalCommBlock
     {
         var checkSum = GeneralUtilities.FletcherCheckSum.CalculateChecksumFromBytes(
             blockBytes[..^VariableDefinitions.ByteSizeOfChecksum],
-            GeneralUtilities.FletcherCheckSum.FletcherSizes.FletcherTypes.Fletcher64);
+            GeneralUtilities.FletcherCheckSum.FletcherTypes.Fletcher64);
         var checkSumOffset = VariableDefinitions.BlockSize - VariableDefinitions.ByteSizeOfChecksum;
         
         Array.Copy(GeneralUtilities.GeneralUtilities.StoreLittleEndian(BitConverter.GetBytes(checkSum)),
