@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralUtilities", "General
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gx000data", "gx000data\gx000data.csproj", "{BCAFEF1F-56AF-4CC4-AAB7-95362828F466}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gx000touchpadUnitTests", "gx000touchpadUnitTests\gx000touchpadUnitTests.csproj", "{7E46AF65-8E3B-482B-90DB-4DA4A6395AF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{BCAFEF1F-56AF-4CC4-AAB7-95362828F466}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCAFEF1F-56AF-4CC4-AAB7-95362828F466}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCAFEF1F-56AF-4CC4-AAB7-95362828F466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E46AF65-8E3B-482B-90DB-4DA4A6395AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E46AF65-8E3B-482B-90DB-4DA4A6395AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E46AF65-8E3B-482B-90DB-4DA4A6395AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E46AF65-8E3B-482B-90DB-4DA4A6395AF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
