@@ -36,10 +36,7 @@ public static class DataConversion
     /// <exception cref="ArgumentNullException">Thrown when converter is null</exception>
     public static byte[] ToBytes<T>(T dataValue, IDataConverter<T> converter)
     {
-        if (converter == null)
-        {
-            throw new ArgumentNullException(nameof(converter));
-        }
+        ArgumentNullException.ThrowIfNull(converter);
 
         return converter.ToBytes(dataValue);
     }
@@ -54,10 +51,8 @@ public static class DataConversion
     /// <exception cref="ArgumentNullException">Thrown when converter is null</exception>
     public static T FromBytes<T>(byte[] bytes, IDataConverter<T> converter)
     {
-        if (converter == null)
-        {
-            throw new ArgumentNullException(nameof(converter));
-        }
+        ArgumentNullException.ThrowIfNull(converter);
+        
         return converter.FromBytes(bytes);
     }
     

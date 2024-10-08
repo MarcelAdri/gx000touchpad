@@ -14,7 +14,8 @@
           "NUnit": "3.14.0",
           "NUnit.Analyzers": "3.9.0",
           "NUnit3TestAdapter": "4.5.0",
-          "coverlet.collector": "6.0.0"
+          "coverlet.collector": "6.0.0",
+          "gx000data": "1.0.0"
         },
         "runtime": {
           "gx000touchpadUnitTests.dll": {}
@@ -369,6 +370,17 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "gx000data/1.0.0": {
+        "dependencies": {
+          "GeneralUtilities": "1.0.0"
+        },
+        "runtime": {
+          "gx000data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -491,6 +503,11 @@
       "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
     },
     "GeneralUtilities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "gx000data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

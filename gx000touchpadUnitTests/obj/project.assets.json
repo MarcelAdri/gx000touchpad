@@ -441,6 +441,19 @@
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
         }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
+        }
       }
     }
   },
@@ -1111,6 +1124,11 @@
       "type": "project",
       "path": "../GeneralUtilities/GeneralUtilities.csproj",
       "msbuildProject": "../GeneralUtilities/GeneralUtilities.csproj"
+    },
+    "gx000data/1.0.0": {
+      "type": "project",
+      "path": "../gx000data/gx000data.csproj",
+      "msbuildProject": "../gx000data/gx000data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1121,7 +1139,8 @@
       "NUnit >= 3.14.0",
       "NUnit.Analyzers >= 3.9.0",
       "NUnit3TestAdapter >= 4.5.0",
-      "coverlet.collector >= 6.0.0"
+      "coverlet.collector >= 6.0.0",
+      "gx000data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1151,6 +1170,9 @@
           "projectReferences": {
             "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj": {
               "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj"
+            },
+            "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj": {
+              "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj"
             }
           }
         }

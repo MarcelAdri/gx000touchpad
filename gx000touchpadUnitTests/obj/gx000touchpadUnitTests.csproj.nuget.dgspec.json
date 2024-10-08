@@ -57,6 +57,63 @@
         }
       }
     },
+    "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj",
+        "projectName": "gx000data",
+        "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj",
+        "packagesPath": "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\AchttienbvMarcelAdri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj": {
+                "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000touchpadUnitTests\\gx000touchpadUnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -81,6 +138,9 @@
             "projectReferences": {
               "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj": {
                 "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj"
+              },
+              "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj": {
+                "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj"
               }
             }
           }
