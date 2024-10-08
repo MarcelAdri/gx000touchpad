@@ -25,6 +25,6 @@ public class DataExchange
     public static bool StatusChangeIsOK(DataStatus dataStatus, DataStatus newStatus)
     {
         //TODO
-        throw new NotImplementedException();
+        return true;
     }
 }

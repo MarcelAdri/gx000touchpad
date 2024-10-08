@@ -37,10 +37,8 @@ public class DataStore
     /// <param name="variable">The data variable to be stored.</param>
     public void Store(Variable variable)
     {
-        if (variable == null)
-        {
-            throw new ArgumentNullException(nameof(variable), "Variable may not be null.");
-        }
+        ArgumentNullException.ThrowIfNull(variable);
+        
         AddOrUpdateVariable(variable);
     }
 
@@ -54,7 +52,7 @@ public class DataStore
     public bool TryGetDataFromStore(string variableName, out Variable? variable)
     {
         if (string.IsNullOrWhiteSpace(variableName))
-            throw new ArgumentException(nameof(variableName), "Name cannot be null or whitespace.");
+            throw new ArgumentException("Name cannot be null or whitespace.");
     
         if (_storeRoom.TryGetValue(variableName, out Variable? data))
         {
