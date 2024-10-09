@@ -54,13 +54,15 @@ public static class VariableDefinitions
     private readonly struct VariableAttributes : IVariableAttributes
     {
         public string VariableName { get; }
-        public AvailableTypes Type { get; }
+        public string Type { get; }
         public int Length {get; }
         public int BlockNumber { get; }
         public int OffsetInBlock { get; }
 
-        public VariableAttributes(string variableName, AvailableTypes type, int length, int blockNum, int offSet)
+        public VariableAttributes(string variableName, string type, int length, int blockNum, int offSet)
         {
+            if (!DataTypes.Instance.IsAvailableType(type))
+                throw new ArgumentException("Type {0} is not an available type", type);
             VariableName = variableName;
             Type = type;
             Length = length;
@@ -79,14 +81,14 @@ public static class VariableDefinitions
         {
             FirstMessageName,
             new VariableAttributes(FirstMessageName, 
-                AvailableTypes.StringType, 
+                "StringType", 
                 10, 
                 1, 
                 0x0004)
         },
         { FirstNumberName, 
             new VariableAttributes(FirstNumberName, 
-                AvailableTypes.IntType, 
+                "IntType", 
                 4, 
                 1, 
                 0x000E) 
@@ -112,16 +114,16 @@ public static class VariableDefinitions
     /// </summary>
     /// <param name="variableType">The type of the variable.</param>
     /// <returns>True if the size matters, false otherwise.</returns>
-    public static bool SizeMatters(AvailableTypes variableType)
+    public static bool SizeMatters(string variableType)
     {
         switch (variableType)
         {
-            case AvailableTypes.StringType:
+            case "StringType":
             {
                 return true;
             }
-            case AvailableTypes.IntType:
-            case AvailableTypes.LongType:
+            case "IntType":
+            case "LongType":
             {
                 return false;
             }

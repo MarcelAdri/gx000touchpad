@@ -29,7 +29,7 @@ public interface IVariableAttributes
     /// <summary>
     /// Gets the type of the variable.
     /// </summary>
-    public AvailableTypes Type { get; }
+    public string Type { get; }
 
     /// <summary>
     /// Represents the Length property of a variable.

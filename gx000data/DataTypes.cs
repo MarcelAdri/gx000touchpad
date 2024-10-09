@@ -18,6 +18,35 @@ namespace gx000data;
 /// </summary>
 public sealed class DataTypes
 {
+    private enum AvailableTypes
+    {
+        /// <summary>
+        /// Represents the string data type.
+        /// </summary>
+        /// <remarks>
+        /// This enum member is used to indicate that a variable is of type string.
+        /// It is used in the Variables class to validate and assign string values to variables.
+        /// </remarks>
+        StringType = 0,
+
+        /// <summary>
+        /// Represents the integer data type.
+        /// </summary>
+        /// <remarks>
+        /// This enum member is used to indicate that a variable is of type int.
+        /// It is used in the Variables class to validate and assign int values to variables.
+        /// </remarks>
+        IntType = 1,
+
+        /// <summary>
+        /// Represents the long data type.
+        /// </summary>
+        /// <remarks>
+        /// This enum member is used to indicate that a variable is of type long.
+        /// It is used in the Variables class to validate and assign long values to variables.
+        /// </remarks>
+        LongType = 2
+    }
     /// <summary>
     /// ThisInstance represents the singleton instance of the DataTypes class.
     /// </summary>
@@ -26,12 +55,7 @@ public sealed class DataTypes
     /// which provides access to the available types for the data.
     /// </remarks>
     private static readonly DataTypes ThisInstance = new ();
-    private readonly List<AvailableTypes> _validTypes = new()
-    {
-        AvailableTypes.StringType,
-        AvailableTypes.IntType,
-        AvailableTypes.LongType
-    };
+    private readonly List<string> _validTypes = Enum.GetNames(typeof(AvailableTypes)).ToList();
 
     /// <summary>
     /// Represents a class that provides information about available data types.
@@ -74,11 +98,11 @@ public sealed class DataTypes
     /// }
     /// </code>
     /// </example>
-    public IReadOnlyList<AvailableTypes> ValidTypes
+    public IReadOnlyList<string> ValidTypes
     {
         get
         {
-            return _validTypes.AsReadOnly();
+            return _validTypes;
         }
     }
 
@@ -87,7 +111,7 @@ public sealed class DataTypes
     /// </summary>
     /// <param name="type">The type to check.</param>
     /// <returns>True if the type is available; otherwise, false.</returns>
-    public bool IsAvailableType(AvailableTypes type)
+    public bool IsAvailableType(string type)
     {
         return _validTypes.Contains(type);
     }

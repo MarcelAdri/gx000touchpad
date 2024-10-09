@@ -184,17 +184,17 @@ public static class InternalCommBlock
             {
                 switch (attributes.Type)
                 {
-                    case AvailableTypes.StringType:
+                    case "StringType":
                         outputList.Add(ExtractStringVariable(attributes, dataBlock));
                         break;
-                    case AvailableTypes.IntType:
+                    case "IntType":
                         outputList.Add(ExtractInt32Variable(attributes, dataBlock));
                         break;
-                    case AvailableTypes.LongType:
+                    case "LongType":
                         outputList.Add(ExtractInt64Variable(attributes, dataBlock));
                         break;
                     default:
-                        throw new ArgumentException($"Variable type {attributes.Type.ToString()} not implemented.");
+                        throw new ArgumentException($"Variable type {attributes.Type} not implemented.");
                 }
             }
         }

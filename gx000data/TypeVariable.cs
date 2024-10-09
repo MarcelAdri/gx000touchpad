@@ -66,7 +66,7 @@ public abstract class TypeVariable<T> : Variable
         string variableName,
         DataExchange.DataStatus dataStatus,
         T dataValue,
-        AvailableTypes expectedType,
+        string expectedType,
         IDataConverter<T> converter) 
             : base(variableName, dataStatus)
     {
@@ -143,7 +143,7 @@ public abstract class TypeVariable<T> : Variable
     /// <param name="expectedType">The expected type of the variable.</param>
     /// <exception cref="ArgumentException">Thrown when variableName is empty
     /// or expectedType is not consistent with the variable definition.</exception>
-    private void AssertVariableType(string variableName, AvailableTypes expectedType)
+    private void AssertVariableType(string variableName, string expectedType)
     {
         if (String.IsNullOrWhiteSpace(variableName))
         {
