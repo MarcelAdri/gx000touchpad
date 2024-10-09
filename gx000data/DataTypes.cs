@@ -91,7 +91,7 @@ public sealed class DataTypes
     /// The following code demonstrates how to use the ValidTypes property:
     /// <code>
     /// DataTypes dataTypes = DataTypes.Instance;
-    /// IReadOnlyList&lt;AvailableTypes&gt; validTypes = dataTypes.ValidTypes;
+    /// IReadOnlyList&lt;string&gt; validTypes = dataTypes.ValidTypes;
     /// foreach (AvailableTypes type in validTypes)
     /// {
     /// Console.WriteLine(type);
@@ -111,8 +111,14 @@ public sealed class DataTypes
     /// </summary>
     /// <param name="type">The type to check.</param>
     /// <returns>True if the type is available; otherwise, false.</returns>
+    /// <exception cref="ArgumentNullException">Thrown when type is null or empty.</exception>
     public bool IsAvailableType(string type)
     {
+        if (String.IsNullOrWhiteSpace(type))
+        {
+            throw new ArgumentNullException("Argument 'type' may not be null.", new Exception());
+        }
+        
         return _validTypes.Contains(type);
     }
 }
