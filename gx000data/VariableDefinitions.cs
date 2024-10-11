@@ -81,14 +81,14 @@ public static class VariableDefinitions
         {
             FirstMessageName,
             new VariableAttributes(FirstMessageName, 
-                "StringType", 
+                DataTypes.StringType, 
                 10, 
                 1, 
                 0x0004)
         },
         { FirstNumberName, 
             new VariableAttributes(FirstNumberName, 
-                "IntType", 
+                DataTypes.IntType, 
                 4, 
                 1, 
                 0x000E) 
@@ -114,25 +114,20 @@ public static class VariableDefinitions
     /// </summary>
     /// <param name="variableType">The type of the variable.</param>
     /// <returns>True if the size matters, false otherwise.</returns>
+    /// <exception cref="InvalidOperationException">Thrown when the passed variabletype is unknown</exception>
     public static bool SizeMatters(string variableType)
     {
-        switch (variableType)
+        if (variableType == DataTypes.StringType)
         {
-            case "StringType":
-            {
-                return true;
-            }
-            case "IntType":
-            case "LongType":
-            {
-                return false;
-            }
-            default:
-            {
-                throw new InvalidOperationException($"Type definition of {variableType} incomplete");
-            }
-            
+            return true;
         }
+        if (variableType == DataTypes.IntType ||
+                 variableType == DataTypes.LongType)
+        {
+            return false;
+        }
+        
+        throw new InvalidOperationException($"Type definition of {variableType} incomplete");
     }
 
     /// <summary>

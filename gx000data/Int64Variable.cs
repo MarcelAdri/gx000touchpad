@@ -22,7 +22,7 @@ public class Int64Variable : TypeVariable<long>, IVariable<long>
     /// Represents a variable of type Int64.
     /// </summary>
     public Int64Variable(string variableName, DataExchange.DataStatus dataStatus, long dataValue) 
-        : base(variableName, dataStatus, dataValue, "LongType", new Int64DataConverter())
+        : base(variableName, dataStatus, dataValue, DataTypes.LongType, new Int64DataConverter())
     {
     }
 }

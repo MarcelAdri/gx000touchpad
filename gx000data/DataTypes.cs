@@ -57,6 +57,10 @@ public sealed class DataTypes
     private static readonly DataTypes ThisInstance = new ();
     private readonly List<string> _validTypes = Enum.GetNames(typeof(AvailableTypes)).ToList();
 
+    public static string StringType => nameof(AvailableTypes.StringType);
+    public static string IntType => nameof(AvailableTypes.IntType);
+    public static string LongType => nameof(AvailableTypes.LongType);
+
     /// <summary>
     /// Represents a class that provides information about available data types.
     /// </summary>
@@ -73,13 +77,7 @@ public sealed class DataTypes
     /// <remarks>
     /// The Instance property of the DataTypes class provides access to the singleton instance of the class.
     /// </remarks>
-    public static DataTypes Instance
-    {
-        get
-        {
-            return ThisInstance;
-        }
-    }
+    public static DataTypes Instance => ThisInstance;
 
     /// <summary>
     /// Represents the valid types for the data.
@@ -98,13 +96,7 @@ public sealed class DataTypes
     /// }
     /// </code>
     /// </example>
-    public IReadOnlyList<string> ValidTypes
-    {
-        get
-        {
-            return _validTypes;
-        }
-    }
+    public IReadOnlyList<string> ValidTypes => _validTypes;
 
     /// <summary>
     /// Determines whether the specified type is an available data type.
