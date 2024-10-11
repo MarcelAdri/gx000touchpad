@@ -36,8 +36,16 @@ public class Int32DataConverter : IDataConverter<int>
     /// </summary>
     /// <param name="bytes">The byte array containing the data value to convert.</param>
     /// <returns>The original data value of type int.</returns>
+    /// <exception cref="ArgumentOutOfRangeException">Thrown when the length of byte[] bytes
+    /// is something other than 4.</exception>
     public int FromBytes(byte[] bytes)
     {
+        if (bytes.Length != 4)
+        {
+            throw new ArgumentOutOfRangeException(nameof(bytes),
+                $"The number of byte for an Int32 conversion needs to be 4, given length is {bytes.Length}.");
+        }
+        
         return BitConverter.ToInt32(_byteProcessor.StoreLittleEndian(bytes));
     }
 }
