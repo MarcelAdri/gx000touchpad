@@ -15,7 +15,7 @@
 
 using GeneralUtilities;
 
-namespace gx000touchpadUnitTests;
+namespace gx000touchpadUnitTests.GeneralUtilities;
 
 [TestFixture]
 public class RandomGeneratorTests

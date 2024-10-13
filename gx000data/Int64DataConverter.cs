@@ -38,6 +38,12 @@ public class Int64DataConverter : IDataConverter<long>
     /// <returns>The original data value of type int.</returns>
     public long FromBytes(byte[] bytes)
     {
+        if (bytes.Length != 8)
+        {
+            throw new ArgumentOutOfRangeException(nameof(bytes),
+                $"The number of byte for an Int64 conversion needs to be 8, given length is {bytes.Length}.");
+        }
+        
         return BitConverter.ToInt64(_byteProcessor.StoreLittleEndian(bytes));
     }
 }
