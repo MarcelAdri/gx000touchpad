@@ -18,7 +18,7 @@ namespace gx000data;
 /// <summary>
 /// Represents a data store that stores DataVariables.
 /// </summary>
-public class DataStore
+public class DataStore : IDataStore
 {
     /// <summary>
     /// Represents a store room for data variables.

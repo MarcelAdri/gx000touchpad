@@ -12,6 +12,7 @@
 //     */
 
 using System.Collections.Concurrent;
+using System.ComponentModel.DataAnnotations;
 using GeneralUtilities;
 
 namespace gx000data;
@@ -39,10 +40,11 @@ public static class InternalCommBlock
     /// Creates a data block for the specified block number,
     /// from the variables in the data store associated with the given block number.
     /// </summary>
-    /// <param name="blockNumber">The number of the block.</param>
+    /// <param name="blockNumber">The number of the block, which determines the contents as determined in
+    /// VariableDefinitions.</param>
     /// <param name="dataStore">The data store object.</param>
     /// <returns>The byte array representing the data block.</returns>
-    public static byte[] MakeBlock(int blockNumber, DataStore dataStore)
+    public static byte[] MakeBlock(int blockNumber, IDataStore dataStore)
     {
         ValidateBlockNumber(blockNumber);
 
@@ -51,6 +53,51 @@ public static class InternalCommBlock
         blockBytes = AddBlockProperties(blockBytes, blockNumber);
 
         return blockBytes;
+    }
+    
+    /// <summary>
+    /// Extracts data variables from a given data block.
+    /// </summary>
+    /// <param name="dataBlock">The data block to extract variables from.</param>
+    /// <returns>A list of extracted data variables.</returns>
+    /// <exception cref="ArgumentException">Thrown when block size or checksum are not OK.</exception>
+    public static IReadOnlyList<Variable> ExtractBlock(byte[] dataBlock)
+    {
+        if (dataBlock.Length != VariableDefinitions.BlockSize || !ChecksumChecksOut(dataBlock))
+        {
+            throw new ArgumentException("Invalid block passed into method.", nameof(dataBlock));
+        }
+
+        var outputList = new List<Variable>();
+        var blockNumber = BitConverter.ToInt32(_byteProcessor.StoreLittleEndian(
+            dataBlock[..VariableDefinitions.ByteSizeOfBlockNumber]));
+        foreach (var variableName in BlockContents[blockNumber])
+        {
+            var attributes = VariableDefinitions.FindVariableAttributes(variableName);
+            var dataValue = dataBlock[attributes.OffsetInBlock..(attributes.OffsetInBlock + attributes.Length)];
+            
+            
+            if (IsDataNotEmpty(dataValue, attributes.Length))
+            {
+                if (attributes.Type == DataTypes.StringType)
+                {
+                    outputList.Add(ExtractStringVariable(attributes, dataBlock));
+                }
+                else if (attributes.Type == DataTypes.IntType)
+                {
+                    outputList.Add(ExtractInt32Variable(attributes, dataBlock));
+                }
+                else if (attributes.Type == DataTypes.LongType)
+                {
+                    outputList.Add(ExtractInt64Variable(attributes, dataBlock));
+                }
+                else
+                {
+                    throw new ArgumentException($"Variable type {attributes.Type} not implemented.");
+                }
+            }
+        }
+        return outputList;
     }
     /// <summary>
     /// Validates if the specified block number is valid within the range of blocks.
@@ -107,7 +154,7 @@ public static class InternalCommBlock
     /// <param name="dataStore">The DataStore object used to retrieve variable contents.</param>
     /// <param name="blockContents">A ConcurrentBag of variable names to include in the block.</param>
     /// <returns>A byte array representing the block with variable contents.</returns>
-    private static byte[] CreateBlockWithVariableContents(DataStore dataStore, ConcurrentBag<string> blockContents)
+    private static byte[] CreateBlockWithVariableContents(IDataStore dataStore, ConcurrentBag<string> blockContents)
     {
         var blockBytes = new byte[VariableDefinitions.BlockSize];
         var totalLength = 0;
@@ -135,7 +182,7 @@ public static class InternalCommBlock
     /// <param name="variableName">The name of the variable.</param>
     /// <param name="length">The length of the variable in bytes.</param>
     /// <returns>The byte array representing the variable's value, or a default value if the variable is not found.</returns>
-    private static byte[] GetVariableBytesOrDefault(DataStore dataStore, string variableName, int length)
+    private static byte[] GetVariableBytesOrDefault(IDataStore dataStore, string variableName, int length)
     {
         if (dataStore.TryGetDataFromStore(variableName, out Variable variableContents))
         {
@@ -160,48 +207,6 @@ public static class InternalCommBlock
     }
 
     /// <summary>
-    /// Extracts data variables from a given data block.
-    /// </summary>
-    /// <param name="dataBlock">The data block to extract variables from.</param>
-    /// <returns>A list of extracted data variables.</returns>
-    /// <exception cref="ArgumentException">Thrown when block size or checksum are not OK.</exception>
-    public static IReadOnlyList<Variable> ExtractBlock(byte[] dataBlock)
-    {
-        if (dataBlock.Length != VariableDefinitions.BlockSize || !ChecksumChecksOut(dataBlock))
-        {
-            throw new ArgumentException("Invalid block passed into method.", nameof(dataBlock));
-        }
-
-        var outputList = new List<Variable>();
-        var blockNumber = Convert.ToInt32(_byteProcessor.StoreLittleEndian(
-            dataBlock[..VariableDefinitions.ByteSizeOfBlockNumber]));
-        foreach (var variableName in BlockContents[blockNumber])
-        {
-            var attributes = VariableDefinitions.FindVariableAttributes(variableName);
-            var dataValue = dataBlock[attributes.OffsetInBlock..(attributes.OffsetInBlock + attributes.Length)];
-        
-            if (IsDataNotEmpty(dataValue, attributes.Length))
-            {
-                switch (attributes.Type)
-                {
-                    case "StringType":
-                        outputList.Add(ExtractStringVariable(attributes, dataBlock));
-                        break;
-                    case "IntType":
-                        outputList.Add(ExtractInt32Variable(attributes, dataBlock));
-                        break;
-                    case "LongType":
-                        outputList.Add(ExtractInt64Variable(attributes, dataBlock));
-                        break;
-                    default:
-                        throw new ArgumentException($"Variable type {attributes.Type} not implemented.");
-                }
-            }
-        }
-        return outputList;
-    }
-
-    /// <summary>
     /// Checks whether the given data array is not empty.
     /// </summary>
     /// <param name="data">The data array to be checked.</param>
@@ -211,7 +216,7 @@ public static class InternalCommBlock
     {
         var emptyDataValue = new byte[length];
         Array.Fill(emptyDataValue, DefaultFiller);
-        return Enumerable.SequenceEqual(data, emptyDataValue);
+        return !Enumerable.SequenceEqual(data, emptyDataValue);
     }
     /// <summary>
     /// Extracts the checksum value from a data block.
@@ -220,7 +225,7 @@ public static class InternalCommBlock
     /// <returns>The checksum value extracted from the data block.</returns>
     private static ulong ExtractChecksumFromBlock(byte[] dataBlock)
     {
-        return Convert.ToUInt64(_byteProcessor.StoreLittleEndian(
+        return BitConverter.ToUInt64(_byteProcessor.StoreLittleEndian(
             dataBlock[(VariableDefinitions.BlockSize - VariableDefinitions.ByteSizeOfChecksum)..]));
     }
 
