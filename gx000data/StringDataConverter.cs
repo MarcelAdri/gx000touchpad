@@ -32,7 +32,7 @@ public class StringDataConverter : IDataConverter<string>
     /// Converts a byte array back into the original data value of type string.
     /// </summary>
     /// <param name="bytes">The byte array containing the data value to convert.</param>
-    /// <returns>The original data value of type int.</returns>
+    /// <returns>The original data value of type string.</returns>
     public string FromBytes(byte[] bytes)
     {
         return DataConversion.Encoding.GetString(bytes);
