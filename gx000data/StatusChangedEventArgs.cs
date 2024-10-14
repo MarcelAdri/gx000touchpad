@@ -13,7 +13,13 @@
 
 namespace gx000data;
 
+/// <summary>
+/// Provides data for the status changed event.
+/// </summary>
 public class StatusChangedEventArgs : EventArgs
 {
+    /// <summary>
+    /// Represents the variable associated with the status change event.
+    /// </summary>
     public Variable variable { get; set; }    
 }
