@@ -27,6 +27,11 @@ public static class VariableDefinitions
     /// Represents the name of the first number variable.
     /// </summary>
     public const string FirstNumberName = "FirstNumber";
+    
+    /// <summary>
+    /// Represents the name of the first number variable.
+    /// </summary>
+    public const string FirstLongName = "FirstLong";
 
     /// <summary>
     /// Represents the number of blocks.
@@ -92,6 +97,15 @@ public static class VariableDefinitions
                 4, 
                 1, 
                 0x000E) 
+        },
+        { FirstLongName,
+            new VariableAttributes(FirstLongName,
+                DataTypes.LongType,
+                8,
+                1,
+                0x0012
+                )
+            
         }
         // add more variables here
     };
