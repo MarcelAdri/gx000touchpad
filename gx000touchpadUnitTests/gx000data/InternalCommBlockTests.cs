@@ -34,6 +34,10 @@ public class InternalCommBlockTests
     private int _firstNumberOffset;
     private int _firstNumberLength;
     private byte _defaultFiller;
+    private long _firstLong;
+    private byte[] _firstLongBytes;
+    private int _firstLongOffset;
+    private int _firstLongLength;
 
     [SetUp]
     public void Setup()
@@ -50,8 +54,14 @@ public class InternalCommBlockTests
         _firstNumberOffset = VariableDefinitions.
             FindVariableAttributes(VariableDefinitions.FirstNumberName).OffsetInBlock;
         _firstNumberLength = VariableDefinitions.FindVariableAttributes(VariableDefinitions.FirstNumberName).Length;
+        _firstLong = 1000000000L;
+        _firstLongBytes = DataConversion.ToBytes(_firstLong, new Int64DataConverter());
+        _firstLongOffset = VariableDefinitions.
+            FindVariableAttributes(VariableDefinitions.FirstLongName).OffsetInBlock;
+        _firstLongLength = VariableDefinitions.FindVariableAttributes(VariableDefinitions.FirstLongName).Length;
         _defaultFiller = 32;
         
+
     }
     
     [Test]
@@ -59,13 +69,16 @@ public class InternalCommBlockTests
     {
         SetupDataStoreForStringVariable();
         SetupDataStoreForInt32Variable();
+        SetupDataStoreForInt64Variable();
         
         var result = InternalCommBlock.MakeBlock(_blockNumber, _dataStore.Object);
         
         var resultMessage = result[_firstMessageOffset..(_firstMessageOffset+_firstMessageLength)];
         var resultNumber = result[_firstNumberOffset..(_firstNumberOffset + _firstNumberLength)];
+        var resultLong = result[_firstLongOffset..(_firstLongOffset + _firstLongLength)];
         
         Assert.That(_firstNumberBytes, Is.EqualTo(resultNumber), "First number is correct");
+        Assert.That(_firstLongBytes, Is.EqualTo(resultLong), "First long is correct");
         Assert.That(_firstMessageBytes, Is.EqualTo(resultMessage), "First message is correct");
     }
 
@@ -74,6 +87,7 @@ public class InternalCommBlockTests
     {
         SetupDataStoreForStringVariable();
         SetupDataStoreForInt32Variable();
+        SetupDataStoreForInt64Variable();
         
         byte[] result = InternalCommBlock.MakeBlock(_blockNumber, _dataStore.Object);
         
@@ -96,13 +110,17 @@ public class InternalCommBlockTests
         
         var resultMessage = result[_firstMessageOffset..(_firstMessageOffset + _firstMessageLength)];
         var resultNumber = result[_firstNumberOffset..(_firstNumberOffset + _firstNumberLength)];
+        var resultLong = result[_firstLongOffset..(_firstLongOffset + _firstLongLength)];
         
         var emptyMessage = new byte[_firstMessageLength];
         Array.Fill(emptyMessage, _defaultFiller);
         var emptyNumber = new byte[_firstNumberLength];
         Array.Fill(emptyNumber, _defaultFiller);
+        var emptyLong = new byte[_firstLongLength];
+        Array.Fill(emptyLong, _defaultFiller);
         
         Assert.That(resultNumber, Is.EqualTo(emptyNumber), "First number is empty");
+        Assert.That(resultLong, Is.EqualTo(emptyLong), "First long is empty");
         Assert.That(resultMessage, Is.EqualTo(emptyMessage), "First message is empty");
     }
     
@@ -120,14 +138,17 @@ public class InternalCommBlockTests
     {
         SetupDataStoreForStringVariable();
         SetupDataStoreForInt32Variable();
+        SetupDataStoreForInt64Variable();
         
         var testBlock = InternalCommBlock.MakeBlock(1, _dataStore.Object);
         
         var result = InternalCommBlock.ExtractBlock(testBlock);
         
-        Assert.That(result.Count == 2, "Number of variables is correct.");
+        Assert.That(result.Count == 3, "Number of variables is correct.");
         Assert.That(result.Any(r => r.VariableName == VariableDefinitions.FirstNumberName), Is.True,
             "FirstNumber is found.");
+        Assert.That(result.Any(r => r.VariableName == VariableDefinitions.FirstLongName), Is.True,
+            "FirstLong is found.");
         Assert.That(result.Any(r => r.VariableName == VariableDefinitions.FirstMessageName), Is.True,
             "FirstMessage is found.");
     }
@@ -145,6 +166,7 @@ public class InternalCommBlockTests
     {
         SetupDataStoreForStringVariable();
         SetupDataStoreForInt32Variable();
+        SetupDataStoreForInt64Variable();
         
         var testBlock = InternalCommBlock.MakeBlock(1, _dataStore.Object);
 
@@ -183,6 +205,21 @@ public class InternalCommBlockTests
                     VariableDefinitions.FirstNumberName,
                     DataExchange.DataStatus.Synchronized,
                     _firstNumber);
+            }));
+    }
+    
+    private void SetupDataStoreForInt64Variable()
+    {
+        Variable variable;
+        _dataStore.Setup(d => d.TryGetDataFromStore(
+                VariableDefinitions.FirstLongName, out variable))
+            .Returns(true)
+            .Callback(new TryGetDataFromStoreDelegate((string name, out Variable outVar) =>
+            {
+                outVar = new Int64Variable(
+                    VariableDefinitions.FirstLongName,
+                    DataExchange.DataStatus.Synchronized,
+                    _firstLong);
             }));
     }
     
