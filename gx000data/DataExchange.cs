@@ -20,11 +20,13 @@ public class DataExchange
         Synchronized = 0,
         FromSimToClient = 1,
         FromClientToSim = 2,
+        Test = -1
     }
     
     public static bool StatusChangeIsOK(DataStatus dataStatus, DataStatus newStatus)
     {
         //TODO
-        return true;
+        
+        return newStatus != DataStatus.Test;
     }
 }
