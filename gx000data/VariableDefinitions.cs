@@ -77,10 +77,10 @@ public static class VariableDefinitions
     }
 
     /// <summary>
-    /// Class for variable definitions.
-    /// For each variable the attributes are hardcoded here.
+    /// Dictionary with the attributes of all data variables, with the name of the variable as key.
+    /// For each variable the attributes are hardcoded here and only here.
     /// </summary>
-    private static readonly IReadOnlyDictionary<string, IVariableAttributes> Variables =
+    private static readonly IReadOnlyDictionary<string, IVariableAttributes> AllVariables =
         new Dictionary<string, IVariableAttributes>()
     {
         {
@@ -111,6 +111,11 @@ public static class VariableDefinitions
     };
 
     /// <summary>
+    /// Gets the total number of defined variables.
+    /// </summary>
+    public static int NumberOfVariables => AllVariables.Count;
+    
+    /// <summary>
     /// Retrieves all the variables defined in the VariableDefinitions class.
     /// </summary>
     /// <returns>A read-only dictionary containing the variable name as the key and its attributes as the value.</returns>
@@ -120,7 +125,7 @@ public static class VariableDefinitions
     /// </remarks>
     public static IReadOnlyDictionary<string, IVariableAttributes> GetAllVariables()
     {
-        return Variables;
+        return AllVariables;
     }
 
     /// <summary>
@@ -157,8 +162,8 @@ public static class VariableDefinitions
         if (String.IsNullOrWhiteSpace(variableName))
             throw new ArgumentNullException(nameof(variableName), "variableName may not be null.");
 
-        if (!Variables.TryGetValue(variableName, out IVariableAttributes thisVariable))
-            throw new KeyNotFoundException($"No variable with tne name {variableName}.");
+        if (!AllVariables.TryGetValue(variableName, out IVariableAttributes thisVariable))
+            throw new KeyNotFoundException($"No variable with the name {variableName}.");
 
         return thisVariable;
     }
