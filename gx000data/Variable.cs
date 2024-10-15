@@ -35,7 +35,7 @@ public abstract class Variable
         get => _dataStatus;
         set
         {
-            if (!DataExchange.StatusChangeIsOK(_dataStatus, value))
+            if (!DataExchange.IsStatusChangeAllowed(_dataStatus, value))
             {
                 throw new InvalidOperationException("Change of data status refused.");
             }

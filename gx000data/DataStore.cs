@@ -71,9 +71,13 @@ public class DataStore : IDataStore
     private void AddOrUpdateVariable(Variable variable)
     {
         
+        
+        
         _storeRoom.AddOrUpdate(variable.VariableName, variable, (key, oldValue) =>
         {
-            if (IsVariableSynchronizedOrSameStatus(oldValue, variable))
+            var statusAllowsUpdate = DataExchange.StoreToDataStoreIsOk(oldValue, variable);
+            
+            if (statusAllowsUpdate)
             {
                 return variable;
             }

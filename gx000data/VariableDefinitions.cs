@@ -111,7 +111,8 @@ public static class VariableDefinitions
                 DataTypes.LongType,
                 8,
                 1,
-                0x0012
+                0x0012,
+                true
                 )
             
         }

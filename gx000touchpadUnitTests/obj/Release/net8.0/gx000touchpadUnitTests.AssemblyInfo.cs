@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gx000touchpadUnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0db3600f32be1b8ca55ae356de8b8a09d25f36c5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7719594472a58ea4fd24a288d991b22f9a9359c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("gx000touchpadUnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gx000touchpadUnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
