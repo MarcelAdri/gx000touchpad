@@ -63,8 +63,15 @@ public static class VariableDefinitions
         public int Length {get; }
         public int BlockNumber { get; }
         public int OffsetInBlock { get; }
+        public bool UserIsBoss { get; }
 
-        public VariableAttributes(string variableName, string type, int length, int blockNum, int offSet)
+        public VariableAttributes(
+            string variableName, 
+            string type, 
+            int length, 
+            int blockNum, 
+            int offSet, 
+            bool userIsBoss = false)
         {
             if (!DataTypes.Instance.IsAvailableType(type))
                 throw new ArgumentException("Type {0} is not an available type", type);
@@ -73,6 +80,7 @@ public static class VariableDefinitions
             Length = length;
             BlockNumber = blockNum;
             OffsetInBlock = offSet;
+            UserIsBoss = userIsBoss;
         }
     }
 
