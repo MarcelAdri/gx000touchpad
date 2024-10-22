@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kRy6MnhjDbQ=",
+  "dgSpecHash": "2GZaimZAS0o=",
   "success": true,
   "projectFilePath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000touchpadUnitTests\\gx000touchpadUnitTests.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,7 @@
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\nunit\\3.14.0\\nunit.3.14.0.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\nunit.analyzers\\3.9.0\\nunit.analyzers.3.9.0.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\nunit3testadapter\\4.5.0\\nunit3testadapter.4.5.0.nupkg.sha512",
+    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\stateless\\5.16.0\\stateless.5.16.0.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
   ],

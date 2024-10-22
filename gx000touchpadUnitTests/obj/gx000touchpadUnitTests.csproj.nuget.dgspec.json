@@ -106,6 +106,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Stateless": {
+              "target": "Package",
+              "version": "[5.16.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -192,6 +198,10 @@
             "NUnit3TestAdapter": {
               "target": "Package",
               "version": "[4.5.0, )"
+            },
+            "Stateless": {
+              "target": "Package",
+              "version": "[5.16.0, )"
             },
             "coverlet.collector": {
               "target": "Package",

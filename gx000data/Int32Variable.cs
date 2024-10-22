@@ -21,8 +21,8 @@ public class Int32Variable : TypeVariable<int>, IVariable<int>
     /// <summary>
     /// Represents a variable of type int.
     /// </summary>
-    public Int32Variable(string variableName, DataExchange.DataStatus dataStatus, int dataValue) 
-        : base(variableName, dataStatus, dataValue, DataTypes.IntType, new Int32DataConverter())
+    public Int32Variable(string variableName, int dataValue) 
+        : base(variableName, dataValue, DataTypes.IntType, new Int32DataConverter())
     {
     }
 }

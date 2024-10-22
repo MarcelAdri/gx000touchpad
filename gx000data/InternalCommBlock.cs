@@ -280,11 +280,13 @@ public static class InternalCommBlock
     /// <returns>The extracted string variable.</returns>
     private static StringVariable ExtractStringVariable(IVariableAttributes variable, byte[] dataBlock)
     {
-        return new StringVariable(
+        var newVariable = new StringVariable(
             variable.VariableName,
-            DataExchange.DataStatus.FromClientToSim,
-           DataConversion.FromBytes(dataBlock[variable.OffsetInBlock..(variable.OffsetInBlock + variable.Length)], 
-               new StringDataConverter()));
+            DataConversion.FromBytes(dataBlock[variable.OffsetInBlock..(variable.OffsetInBlock + variable.Length)], 
+                new StringDataConverter()));
+        newVariable.Trigger = Variable.Triggers.ClientSendsUpdate;
+        newVariable.ChangeStatus();
+        return newVariable;
     }
 
     /// <summary>
@@ -295,11 +297,13 @@ public static class InternalCommBlock
     /// <returns>The extracted Int32 variable.</returns>
     private static Int32Variable ExtractInt32Variable(IVariableAttributes variable, byte[] dataBlock)
     {
-        return new Int32Variable(
+        var newVariable = new Int32Variable(
             variable.VariableName,
-            DataExchange.DataStatus.FromClientToSim,
-            DataConversion.FromBytes(dataBlock[variable.OffsetInBlock..(variable.OffsetInBlock + variable.Length)],
+            DataConversion.FromBytes(dataBlock[variable.OffsetInBlock..(variable.OffsetInBlock + variable.Length)], 
                 new Int32DataConverter()));
+        newVariable.Trigger = Variable.Triggers.ClientSendsUpdate;
+        newVariable.ChangeStatus();
+        return newVariable;
     }
 
     /// <summary>
@@ -310,11 +314,13 @@ public static class InternalCommBlock
     /// <returns>The extracted Int64 variable.</returns>
     private static Int64Variable ExtractInt64Variable(IVariableAttributes variable, byte[] dataBlock)
     {
-        return new Int64Variable(
+        var newVariable = new Int64Variable(
             variable.VariableName,
-            DataExchange.DataStatus.FromClientToSim,
-            DataConversion.FromBytes(dataBlock[variable.OffsetInBlock..(variable.OffsetInBlock + variable.Length)],
+            DataConversion.FromBytes(dataBlock[variable.OffsetInBlock..(variable.OffsetInBlock + variable.Length)], 
                 new Int64DataConverter()));
+        newVariable.Trigger = Variable.Triggers.ClientSendsUpdate;
+        newVariable.ChangeStatus();
+        return newVariable;
     }
 
     /// <summary>

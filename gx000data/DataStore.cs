@@ -75,9 +75,7 @@ public class DataStore : IDataStore
         
         _storeRoom.AddOrUpdate(variable.VariableName, variable, (key, oldValue) =>
         {
-            var statusAllowsUpdate = DataExchange.StoreToDataStoreIsOk(oldValue, variable);
-            
-            if (statusAllowsUpdate)
+            if (variable.StoreToDataIsOk())
             {
                 return variable;
             }
@@ -86,20 +84,6 @@ public class DataStore : IDataStore
 
             return oldValue;
         });
-    }
-
-    /// <summary>
-    /// Checks if the given variable is synchronized or has the same status as the old value.
-    /// </summary>
-    /// <param name="oldValue">The old value of the variable.</param>
-    /// <param name="variable">The variable to check.</param>
-    /// <returns>
-    /// True if the variable is synchronized or has the same status as the old value, false otherwise.
-    /// </returns>
-    private bool IsVariableSynchronizedOrSameStatus(Variable oldValue, Variable variable)
-    {
-        return oldValue.Status == DataExchange.DataStatus.Synchronized ||
-               oldValue.Status == variable.Status;
     }
 
     /// <summary>

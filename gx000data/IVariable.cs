@@ -24,11 +24,7 @@ public interface IVariable<T>
     /// </summary>
     /// <typeparam name="T">The type of the variable.</typeparam>
     string VariableName { get; }
-
-    /// <summary>
-    /// Represents the status of a variable in data exchange.
-    /// </summary>
-    DataExchange.DataStatus Status { get; set; }
+    public Variable.Triggers Trigger { get; set; }
 
     /// <summary>
     /// Represents the value of a variable.

@@ -24,8 +24,8 @@ public class StringVariable : TypeVariable<string>, IVariable<string>
     /// <summary>
     /// Represents a string variable.
     /// </summary>
-    public StringVariable(string variableName, DataExchange.DataStatus dataStatus, string dataValue) 
-        : base(variableName, dataStatus, dataValue, DataTypes.StringType, new StringDataConverter())
+    public StringVariable(string variableName, string dataValue) 
+        : base(variableName, dataValue, DataTypes.StringType, new StringDataConverter())
     {
     }
 }

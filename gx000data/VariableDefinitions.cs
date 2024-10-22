@@ -11,6 +11,9 @@
 // 
 //     */
 
+using System.Runtime.CompilerServices;
+using Stateless;
+
 namespace gx000data;
 
 /// <summary>
@@ -52,6 +55,7 @@ public static class VariableDefinitions
     /// Represents the byte size of the checksum.
     /// </summary>
     public const int ByteSizeOfChecksum = 8;
+    
 
     /// <summary>
     /// Represents the attributes of a variable.

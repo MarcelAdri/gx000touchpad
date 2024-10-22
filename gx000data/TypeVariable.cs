@@ -64,11 +64,10 @@ public abstract class TypeVariable<T> : Variable
     /// </summary>
     protected TypeVariable(
         string variableName,
-        DataExchange.DataStatus dataStatus,
         T dataValue,
         string expectedType,
         IDataConverter<T> converter) 
-            : base(variableName, dataStatus)
+            : base(variableName)
     {
         AssertVariableType(variableName, expectedType);
         _converter = converter;
