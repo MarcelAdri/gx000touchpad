@@ -19,8 +19,8 @@ namespace gx000touchpadUnitTests.gx000data;
 
 public class TestableInt64Variable : Int64Variable
 {
-    public TestableInt64Variable(string variableName, DataExchange.DataStatus dataStatus, long dataValue)
-        : base(variableName, dataStatus, dataValue)
+    public TestableInt64Variable(string variableName, long dataValue)
+        : base(variableName, dataValue)
     {
     }
     public bool OnStatusChangedCalled { get; private set; }

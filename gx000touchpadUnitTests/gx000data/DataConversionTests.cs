@@ -14,7 +14,6 @@
 // //          If not, see <https://www.gnu.org/licenses/>.
 
 using System.Collections;
-using System.Runtime.InteropServices.JavaScript;
 using gx000data;
 
 namespace gx000touchpadUnitTests.gx000data;

@@ -188,7 +188,6 @@ public class InternalCommBlockTests
             {
                 outVar = new StringVariable(
                     VariableDefinitions.FirstMessageName,
-                    DataExchange.DataStatus.Synchronized,
                     _firstMessage);
             }));
     }
@@ -203,7 +202,6 @@ public class InternalCommBlockTests
             {
                 outVar = new Int32Variable(
                     VariableDefinitions.FirstNumberName,
-                    DataExchange.DataStatus.Synchronized,
                     _firstNumber);
             }));
     }
@@ -218,7 +216,6 @@ public class InternalCommBlockTests
             {
                 outVar = new Int64Variable(
                     VariableDefinitions.FirstLongName,
-                    DataExchange.DataStatus.Synchronized,
                     _firstLong);
             }));
     }

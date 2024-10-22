@@ -32,9 +32,9 @@ public class DataTypesTests
     [Test]
     public void ValidTypes_ReflectsAvailableTypes()
     {
-        var availableType1 = "StringType";
-        var availableType2 = "IntType";
-        var availableType3 = "LongType";
+        var availableType1 = DataTypes.StringType;
+        var availableType2 = DataTypes.IntType;
+        var availableType3 = DataTypes.LongType;
         var numberOfTypes = 3;
         
         Assert.That(DataTypes.Instance.ValidTypes.Count, Is.EqualTo(numberOfTypes), "Number of types is correct");
@@ -47,7 +47,7 @@ public class DataTypesTests
     [Test]
     public void IsAvailableType_ValidType_ReturnTrue()
     {
-        var validType = "StringType";
+        var validType = DataTypes.StringType;
         
         Assert.That(DataTypes.Instance.IsAvailableType(validType));
     }

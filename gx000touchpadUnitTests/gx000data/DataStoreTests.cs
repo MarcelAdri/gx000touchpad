@@ -30,7 +30,6 @@ public class DataStoreTests
         _dataStore = new();
         _testVariable = new StringVariable(
             VariableDefinitions.FirstMessageName,
-            DataExchange.DataStatus.Synchronized,
             "TestText");
     }
 

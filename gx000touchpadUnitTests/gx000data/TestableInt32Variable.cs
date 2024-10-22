@@ -19,8 +19,8 @@ namespace gx000touchpadUnitTests.gx000data;
 
 public class TestableInt32Variable : Int32Variable
 {
-    public TestableInt32Variable(string variableName, DataExchange.DataStatus dataStatus, int dataValue)
-        : base(variableName, dataStatus, dataValue)
+    public TestableInt32Variable(string variableName, int dataValue)
+        : base(variableName, dataValue)
     {
     }
 

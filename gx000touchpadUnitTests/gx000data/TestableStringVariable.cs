@@ -19,8 +19,8 @@ namespace gx000touchpadUnitTests.gx000data;
 
 public class TestableStringVariable : StringVariable
 {
-    public TestableStringVariable(string variableName, DataExchange.DataStatus dataStatus, string dataValue)
-        : base(variableName, dataStatus, dataValue)
+    public TestableStringVariable(string variableName, string dataValue)
+        : base(variableName, dataValue)
     {
         
     }
