@@ -31,4 +31,5 @@ public class TestableInt32Variable : Int32Variable
         OnStatusChangedCalled = true;
         base.OnStatusChanged();
     }
+    
 }

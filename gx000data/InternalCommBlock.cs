@@ -284,8 +284,7 @@ public static class InternalCommBlock
             variable.VariableName,
             DataConversion.FromBytes(dataBlock[variable.OffsetInBlock..(variable.OffsetInBlock + variable.Length)], 
                 new StringDataConverter()));
-        newVariable.Trigger = Variable.Triggers.ClientSendsUpdate;
-        newVariable.ChangeStatus();
+        newVariable.ChangeStatus(Variable.Triggers.ClientSendsUpdate);
         return newVariable;
     }
 
@@ -301,8 +300,7 @@ public static class InternalCommBlock
             variable.VariableName,
             DataConversion.FromBytes(dataBlock[variable.OffsetInBlock..(variable.OffsetInBlock + variable.Length)], 
                 new Int32DataConverter()));
-        newVariable.Trigger = Variable.Triggers.ClientSendsUpdate;
-        newVariable.ChangeStatus();
+        newVariable.ChangeStatus(Variable.Triggers.ClientSendsUpdate);
         return newVariable;
     }
 
@@ -318,8 +316,7 @@ public static class InternalCommBlock
             variable.VariableName,
             DataConversion.FromBytes(dataBlock[variable.OffsetInBlock..(variable.OffsetInBlock + variable.Length)], 
                 new Int64DataConverter()));
-        newVariable.Trigger = Variable.Triggers.ClientSendsUpdate;
-        newVariable.ChangeStatus();
+        newVariable.ChangeStatus(Variable.Triggers.ClientSendsUpdate);
         return newVariable;
     }
 

@@ -35,6 +35,14 @@ public class Int32VariableTests
     }
     
     [Test]
+    public void TypeVariableNameGetter_WhenCalled_ShouldGiveName()
+    {
+        var actualName = _variable.VariableName;
+        
+        Assert.That(actualName, Is.EqualTo(VariableDefinitions.FirstNumberName));
+    }
+    
+    [Test]
     public void TypeVariableValueGetter_WhenCalled_ShouldReturnCorrectValue()
     {
         // Act
@@ -54,29 +62,163 @@ public class Int32VariableTests
         // Assert
         Assert.That(actualValue == 84);
     }
-    
-    /*[Test]
-    public void VariableStatusSetter_StatusChangeIsOkIsFalse_ShouldThrowInvalidOperationException()
+
+    [Test]
+    public void StoreToDataIsOk_WhenStorageIsOk_ShouldReturnTrue()
     {
-        Assert.That(() => _variable.Status = DataExchange.DataStatus.Test, 
-            Throws.TypeOf<InvalidOperationException>());
+        _variable.SetTrigger(Variable.Triggers.ClientSendsUpdate);
+        _variable.ChangeStatus(Variable.Triggers.ClientSendsUpdate);
+        
+        Assert.That(_variable.StoreToDataIsOk(), Is.True);
+    } 
+    
+    [Test]
+    public void StoreToDataIsOk_WhenStorageIsNotOk_ShouldReturnFalse()
+    {
+        Assert.That(_variable.StoreToDataIsOk(), Is.False);
+    } 
+    
+    [Test]
+    [TestCase(Variable.DataStatus.Synchronized, 
+        Variable.Triggers.ClientSendsUpdate, 
+        Variable.Triggers.SimSendsUpdate, 
+        2)]
+    [TestCase(Variable.DataStatus.FromSimToClientInProgress, 
+        Variable.Triggers.ClientAcknowledged, 
+        Variable.Triggers.ClientUpdateFailed, 
+        2)]
+    [TestCase(Variable.DataStatus.FromClientToSim, 
+        Variable.Triggers.SimSendsUpdate, 
+        Variable.Triggers.ClientSendsUpdate, 
+        2)]
+    [TestCase(Variable.DataStatus.FromClientToSimInProgress, 
+        Variable.Triggers.SimAcknowledged, 
+        Variable.Triggers.SimUpdateFailed, 
+        2)]
+    [TestCase(Variable.DataStatus.FromSimToClient, 
+        Variable.Triggers.SimSendsUpdate, 
+        Variable.Triggers.SimSendsUpdate, 
+        1)]
+    [TestCase(Variable.DataStatus.StatusNotSet, 
+        Variable.Triggers.ClientSendsUpdate, 
+        Variable.Triggers.SimSendsUpdate, 
+        2)]
+    public void GetTriggers_WhenCalled_ReturnAListOfPossibleTriggers(
+        Variable.DataStatus dataStatus, 
+        Variable.Triggers expectedTrigger1,
+        Variable.Triggers expectedTrigger2,
+        int expectedCount)
+    {
+        SetDataStatus(dataStatus);
+
+        var status = _variable.GetStatus();
+        
+        var actualTriggers = _variable.GetTriggers();
+
+        var isBoss = VariableDefinitions.FindVariableAttributes(_variable.VariableName).UserIsBoss;
+        
+        Assert.That(actualTriggers.Count, Is.EqualTo(expectedCount), 
+            "Actual number of triggers was not correct");
+        Assert.That(actualTriggers.Contains(expectedTrigger1), Is.True, 
+            $"Triggers contains {expectedTrigger1}");
+        Assert.That(actualTriggers.Contains(expectedTrigger2), Is.True, 
+            $"Triggers contains {expectedTrigger2}");
     }
 
     [Test]
-    public void VariableStatusSetter_ChangeIsValid_NewStatusIsSet()
+    public void ChangeStatus_WhenCalledWithValidTrigger_ShouldChangeStatus()
     {
-        _variable.Status = DataExchange.DataStatus.FromClientToSim;
+        _variable.SetTrigger(Variable.Triggers.ClientSendsUpdate);
         
-        Assert.That(_variable.Status == DataExchange.DataStatus.FromClientToSim);
-    }*/
+        var result =_variable.ChangeStatus(Variable.Triggers.ClientSendsUpdate);
+        
+        Assert.That(result, Is.EqualTo(Variable.DataStatus.FromClientToSim));
+    }
     
-    // [Test]
-    // public void VariableStatusSetter_ChangeIsValid_OnStatusChangedIsCalled()
-    // {
-    //     _variable.Status = DataExchange.DataStatus.FromClientToSim;
-    //     
-    //     Assert.IsTrue(_variable.OnStatusChangedCalled);
-    // }
-    //
+    [Test]
+    public void ChangeStatus_WhenCalledWithInvalidTrigger_ShouldThrowInvalidOperationException()
+    {
+        _variable.SetTrigger(Variable.Triggers.ClientSendsUpdate);
+        
+        Assert.That(() => _variable.ChangeStatus(Variable.Triggers.NoAction), Throws.InvalidOperationException);
+    }
+
+    [Test]
+    public void GetTrigger_WhenCalled_ShouldReturnCurrentTrigger()
+    {
+        var result = _variable.GetTrigger();
+        
+        Assert.That(result, Is.EqualTo(Variable.Triggers.NoAction));
+    }
+
+    [Test]
+    public void SetTrigger_WhenCalledWithPossibleTrigger_ShouldSetTrigger()
+    {
+        _variable.SetTrigger(Variable.Triggers.ClientSendsUpdate);
+        
+        Assert.That(_variable.GetTrigger(), Is.EqualTo(Variable.Triggers.ClientSendsUpdate));
+    }
+    
+    [Test]
+    public void SetTrigger_WhenCalledWithInvalidTrigger_ShouldThrowInvalidOperationException()
+    {
+        Assert.That(() => _variable.SetTrigger(Variable.Triggers.NoAction), Throws.InvalidOperationException);
+    }
+
+    [Test]
+    public void GetStatus_WhenCalled_ShouldReturnCorrectStatus()
+    {
+        var result = _variable.GetStatus();
+        
+        Assert.That(result, Is.EqualTo(Variable.DataStatus.StatusNotSet));
+    }
+    
+    private void SetDataStatus(Variable.DataStatus dataStatusToBeReached)
+    {
+        Variable.Triggers nextTrigger = default;
+        if (dataStatusToBeReached == Variable.DataStatus.FromClientToSim ||
+            dataStatusToBeReached == Variable.DataStatus.FromClientToSimInProgress ||
+            dataStatusToBeReached == Variable.DataStatus.Synchronized ||
+            dataStatusToBeReached == Variable.DataStatus.StatusNotSet)
+        {
+            nextTrigger = Variable.Triggers.ClientSendsUpdate;
+            _variable.SetTrigger(nextTrigger);
+        }
+        else
+        {
+            nextTrigger = Variable.Triggers.SimSendsUpdate;
+            _variable.SetTrigger(nextTrigger);
+        }
+
+        if (dataStatusToBeReached != Variable.DataStatus.StatusNotSet)
+        {
+            _variable.ChangeStatus(nextTrigger);    
+        }
+
+        if (dataStatusToBeReached == Variable.DataStatus.FromClientToSimInProgress ||
+            dataStatusToBeReached == Variable.DataStatus.Synchronized)
+        {
+            _variable.ChangeStatus(Variable.Triggers.SimAcknowledged);
+        }
+        else if (dataStatusToBeReached == Variable.DataStatus.FromSimToClientInProgress)
+        {
+            _variable.ChangeStatus(Variable.Triggers.ClientAcknowledged);
+        }
+
+        if (dataStatusToBeReached == Variable.DataStatus.Synchronized)
+        {
+            _variable.ChangeStatus(Variable.Triggers.ClientSendsUpdate);
+        }
+    }
+    
+    [Test]
+    public void VariableStatusSetter_ChangeIsValid_OnStatusChangedIsCalled()
+    {
+        _variable.SetTrigger(Variable.Triggers.ClientSendsUpdate);
+        _variable.ChangeStatus(Variable.Triggers.ClientSendsUpdate);
+        
+        Assert.IsTrue(_variable.OnStatusChangedCalled);
+    }
+    
     
 }
