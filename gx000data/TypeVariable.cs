@@ -49,12 +49,12 @@ public abstract class TypeVariable<T> : Variable
             lock(_lock)
             {
                 byte[] valueInBytes = DataConversion.ToBytes(value, _converter);
-                _dataValue = SetDataLength(valueInBytes, VariableName);
+                _dataValue = SetDataLength(valueInBytes, Name);
             }
         }
     }
 
-    public override byte[] GetValueBytes()
+    public override byte[] GetValueAsBytes()
     {
         return _dataValue;
     }

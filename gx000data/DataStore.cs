@@ -73,9 +73,9 @@ public class DataStore : IDataStore
         
         
         
-        _storeRoom.AddOrUpdate(variable.VariableName, variable, (key, oldValue) =>
+        _storeRoom.AddOrUpdate(variable.Name, variable, (key, oldValue) =>
         {
-            if (variable.StoreToDataIsOk())
+            if (variable.CanStoreData())
             {
                 return variable;
             }
@@ -97,7 +97,7 @@ public class DataStore : IDataStore
 
         lock (_lock)
         {
-            if (_queue.TryRemove(variable.VariableName, out var foundVariable))
+            if (_queue.TryRemove(variable.Name, out var foundVariable))
             {
                 variable.StatusChanged -= OnVariableStatusChanged;
             }    

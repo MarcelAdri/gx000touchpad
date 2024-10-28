@@ -23,7 +23,7 @@ public interface IVariable<T>
     /// Represents an interface for variables in the gx000data namespace.
     /// </summary>
     /// <typeparam name="T">The type of the variable.</typeparam>
-    string VariableName { get; }
+    string Name { get; }
 
     /// <summary>
     /// Represents the value of a variable.

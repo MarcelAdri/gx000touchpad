@@ -145,11 +145,11 @@ public class InternalCommBlockTests
         var result = InternalCommBlock.ExtractBlock(testBlock);
         
         Assert.That(result.Count == 3, "Number of variables is correct.");
-        Assert.That(result.Any(r => r.VariableName == VariableDefinitions.FirstNumberName), Is.True,
+        Assert.That(result.Any(r => r.Name == VariableDefinitions.FirstNumberName), Is.True,
             "FirstNumber is found.");
-        Assert.That(result.Any(r => r.VariableName == VariableDefinitions.FirstLongName), Is.True,
+        Assert.That(result.Any(r => r.Name == VariableDefinitions.FirstLongName), Is.True,
             "FirstLong is found.");
-        Assert.That(result.Any(r => r.VariableName == VariableDefinitions.FirstMessageName), Is.True,
+        Assert.That(result.Any(r => r.Name == VariableDefinitions.FirstMessageName), Is.True,
             "FirstMessage is found.");
     }
     

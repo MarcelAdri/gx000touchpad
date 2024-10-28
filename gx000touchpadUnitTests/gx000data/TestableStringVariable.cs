@@ -26,9 +26,9 @@ public class TestableStringVariable : StringVariable
     }
     public bool OnStatusChangedCalled { get; private set; }
 
-    protected override void OnStatusChanged()
+    protected override void NotifyStatusChanged()
     {
         OnStatusChangedCalled = true;
-        base.OnStatusChanged();
+        base.NotifyStatusChanged();
     }
 }

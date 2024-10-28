@@ -112,17 +112,17 @@ namespace gx000data
         /// </summary>
         private DataStatusStateMachine _stateMachine;
 
-        private Triggers _trigger;
+        private Triggers _currentTrigger;
 
-        public string VariableName { get; }
+        public string Name { get; }
 
         public event EventHandler<StatusChangedEventArgs> StatusChanged;
 
-        protected Variable(string variableName)
+        protected Variable(string name)
         {
-            VariableName = variableName;
-            _stateMachine = new DataStatusStateMachine(VariableName);
-            _trigger = Triggers.NoAction;
+            Name = name;
+            _stateMachine = new DataStatusStateMachine(Name);
+            _currentTrigger = Triggers.NoAction;
         }
 
         /// <summary>
@@ -131,10 +131,7 @@ namespace gx000data
         /// <returns>
         /// A byte array representing the value of the variable.
         /// </returns>
-        public virtual byte[] GetValueBytes()
-        {
-            return new byte[0];
-        }
+        public virtual byte[] GetValueAsBytes() => new byte[0];
 
         /// <summary>
         /// Determines whether storing the current variable's data is allowed based on the state machine.
@@ -142,10 +139,7 @@ namespace gx000data
         /// <returns>
         /// A boolean value indicating if the data can be stored.
         /// </returns>
-        public bool StoreToDataIsOk()
-        {
-            return _stateMachine.CanFire(_trigger);
-        }
+        public bool CanStoreData() => _stateMachine.CanFire(_currentTrigger);
 
         /// <summary>
         /// Changes the status of the variable based on the current trigger and sets the next trigger.
@@ -153,11 +147,11 @@ namespace gx000data
         /// <returns>
         /// The new status of the variable as a DataStatus enum value.
         /// </returns>
-        public DataStatus ChangeStatus(Triggers nextTrigger)
+        public DataStatus ChangeStateWithTrigger(Triggers nextTrigger)
         {
-            _stateMachine.Fire(_trigger);
-            SetTrigger(nextTrigger);
-            OnStatusChanged();
+            _stateMachine.Fire(_currentTrigger);
+            SetCurrentTrigger(nextTrigger);
+            NotifyStatusChanged();
             return _stateMachine.State;
         }
 
@@ -167,10 +161,7 @@ namespace gx000data
         /// <returns>
         /// An IReadOnlyCollection of Triggers representing the valid state transitions for the variable.
         /// </returns>
-        public IReadOnlyCollection<Triggers> GetTriggers()
-        {
-            return _stateMachine.GetTriggers();
-        }
+        public IReadOnlyCollection<Triggers> GetAvailableTriggers() => _stateMachine.GetTriggers();
 
         /// <summary>
         /// Retrieves the current trigger action for the variable instance.
@@ -178,10 +169,7 @@ namespace gx000data
         /// <returns>
         /// The current trigger action represented as a value of the <c>Triggers</c> enum.
         /// </returns>
-        public Triggers GetTrigger()
-        {
-            return _trigger;
-        }
+        public Triggers GetCurrentTrigger() => _currentTrigger;
 
         /// <summary>
         /// Sets the specified trigger for the variable.
@@ -192,11 +180,11 @@ namespace gx000data
         /// <exception cref="InvalidOperationException">
         /// Thrown when the specified trigger is not allowed in the current state.
         /// </exception>
-        public void SetTrigger(Triggers trigger)
+        public void SetCurrentTrigger(Triggers trigger)
         {
-            if (GetTriggers().Contains(trigger))
+            if (GetAvailableTriggers().Contains(trigger))
             {
-                _trigger = trigger;
+                _currentTrigger = trigger;
             }
             else
             {
@@ -204,15 +192,12 @@ namespace gx000data
             }
         }
 
-        public DataStatus GetStatus()
-        {
-            return _stateMachine.State;
-        }
+        public DataStatus GetCurrentStatus() => _stateMachine.State;
 
         /// <summary>
         /// Invokes the StatusChanged event.
         /// </summary>
-        protected virtual void OnStatusChanged()
+        protected virtual void NotifyStatusChanged()
         {
             StatusChanged?.Invoke(this, new StatusChangedEventArgs { variable = this });
         }

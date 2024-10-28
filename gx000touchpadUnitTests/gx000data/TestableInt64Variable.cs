@@ -25,9 +25,9 @@ public class TestableInt64Variable : Int64Variable
     }
     public bool OnStatusChangedCalled { get; private set; }
 
-    protected override void OnStatusChanged()
+    protected override void NotifyStatusChanged()
     {
         OnStatusChangedCalled = true;
-        base.OnStatusChanged();
+        base.NotifyStatusChanged();
     }
 }

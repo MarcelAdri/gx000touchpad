@@ -35,7 +35,7 @@ public class StringVariableTests
     public void VariableNameGetter_ShouldReturnCorrectName()
     {
         // Act
-        var actualName = _variable.VariableName;
+        var actualName = _variable.Name;
         
         // Assert
         Assert.That(actualName, Is.EqualTo(VariableDefinitions.FirstMessageName));
@@ -66,18 +66,18 @@ public class StringVariableTests
     public void StoreToDataIsOk_WhenStorageIsOk_ShouldReturnTrue()
     {
         // Arrange
-        _variable.SetTrigger(Variable.Triggers.ClientSendsUpdate);
-        _variable.ChangeStatus(Variable.Triggers.ClientSendsUpdate);
+        _variable.SetCurrentTrigger(Variable.Triggers.ClientSendsUpdate);
+        _variable.ChangeStateWithTrigger(Variable.Triggers.ClientSendsUpdate);
 
         // Assert
-        Assert.That(_variable.StoreToDataIsOk(), Is.True);
+        Assert.That(_variable.CanStoreData(), Is.True);
     }
 
     [Test]
     public void StoreToDataIsOk_WhenStorageIsNotOk_ShouldReturnFalse()
     {
         // Act & Assert
-        Assert.That(_variable.StoreToDataIsOk(), Is.False);
+        Assert.That(_variable.CanStoreData(), Is.False);
     }
 
     [Test]
@@ -97,8 +97,8 @@ public class StringVariableTests
         SetDataStatus(dataStatus);
 
         // Act
-        var actualTriggers = _variable.GetTriggers();
-        var isBoss = VariableDefinitions.FindVariableAttributes(_variable.VariableName).UserIsBoss;
+        var actualTriggers = _variable.GetAvailableTriggers();
+        var isBoss = VariableDefinitions.FindVariableAttributes(_variable.Name).UserIsBoss;
 
         // Assert
         Assert.That(actualTriggers.Count, Is.EqualTo(expectedCount), "Actual number of triggers was not correct");
@@ -110,10 +110,10 @@ public class StringVariableTests
     public void ChangeStatus_WithValidTrigger_ShouldChangeStatus()
     {
         // Arrange
-        _variable.SetTrigger(Variable.Triggers.ClientSendsUpdate);
+        _variable.SetCurrentTrigger(Variable.Triggers.ClientSendsUpdate);
 
         // Act
-        var result = _variable.ChangeStatus(Variable.Triggers.ClientSendsUpdate);
+        var result = _variable.ChangeStateWithTrigger(Variable.Triggers.ClientSendsUpdate);
 
         // Assert
         Assert.That(result, Is.EqualTo(Variable.DataStatus.FromClientToSim));
@@ -123,17 +123,17 @@ public class StringVariableTests
     public void ChangeStatus_WithInvalidTrigger_ShouldThrowInvalidOperationException()
     {
         // Arrange
-        _variable.SetTrigger(Variable.Triggers.ClientSendsUpdate);
+        _variable.SetCurrentTrigger(Variable.Triggers.ClientSendsUpdate);
 
         // Act & Assert
-        Assert.That(() => _variable.ChangeStatus(Variable.Triggers.NoAction), Throws.InvalidOperationException);
+        Assert.That(() => _variable.ChangeStateWithTrigger(Variable.Triggers.NoAction), Throws.InvalidOperationException);
     }
 
     [Test]
     public void GetTrigger_ShouldReturnCurrentTrigger()
     {
         // Act
-        var result = _variable.GetTrigger();
+        var result = _variable.GetCurrentTrigger();
 
         // Assert
         Assert.That(result, Is.EqualTo(Variable.Triggers.NoAction));
@@ -143,24 +143,24 @@ public class StringVariableTests
     public void SetTrigger_WithValidTrigger_ShouldSetTrigger()
     {
         // Act
-        _variable.SetTrigger(Variable.Triggers.ClientSendsUpdate);
+        _variable.SetCurrentTrigger(Variable.Triggers.ClientSendsUpdate);
 
         // Assert
-        Assert.That(_variable.GetTrigger(), Is.EqualTo(Variable.Triggers.ClientSendsUpdate));
+        Assert.That(_variable.GetCurrentTrigger(), Is.EqualTo(Variable.Triggers.ClientSendsUpdate));
     }
 
     [Test]
     public void SetTrigger_WithInvalidTrigger_ShouldThrowInvalidOperationException()
     {
         // Act & Assert
-        Assert.That(() => _variable.SetTrigger(Variable.Triggers.NoAction), Throws.InvalidOperationException);
+        Assert.That(() => _variable.SetCurrentTrigger(Variable.Triggers.NoAction), Throws.InvalidOperationException);
     }
 
     [Test]
     public void GetStatus_ShouldReturnCorrectStatus()
     {
         // Act
-        var result = _variable.GetStatus();
+        var result = _variable.GetCurrentStatus();
 
         // Assert
         Assert.That(result, Is.EqualTo(Variable.DataStatus.StatusNotSet));
@@ -170,8 +170,8 @@ public class StringVariableTests
     public void VariableStatusSetter_WithValidChange_ShouldInvokeOnStatusChanged()
     {
         // Act
-        _variable.SetTrigger(Variable.Triggers.ClientSendsUpdate);
-        _variable.ChangeStatus(Variable.Triggers.ClientSendsUpdate);
+        _variable.SetCurrentTrigger(Variable.Triggers.ClientSendsUpdate);
+        _variable.ChangeStateWithTrigger(Variable.Triggers.ClientSendsUpdate);
 
         // Assert
         Assert.IsTrue(_variable.OnStatusChangedCalled);
@@ -193,26 +193,26 @@ public class StringVariableTests
             nextTrigger = Variable.Triggers.SimSendsUpdate;
         }
 
-        _variable.SetTrigger(nextTrigger);
+        _variable.SetCurrentTrigger(nextTrigger);
 
         if (dataStatusToBeReached != Variable.DataStatus.StatusNotSet)
         {
-            _variable.ChangeStatus(nextTrigger);
+            _variable.ChangeStateWithTrigger(nextTrigger);
         }
 
         if (dataStatusToBeReached == Variable.DataStatus.FromClientToSimInProgress || 
             dataStatusToBeReached == Variable.DataStatus.Synchronized)
         {
-            _variable.ChangeStatus(Variable.Triggers.SimAcknowledged);
+            _variable.ChangeStateWithTrigger(Variable.Triggers.SimAcknowledged);
         } 
         else if (dataStatusToBeReached == Variable.DataStatus.FromSimToClientInProgress) 
         {
-            _variable.ChangeStatus(Variable.Triggers.ClientAcknowledged);
+            _variable.ChangeStateWithTrigger(Variable.Triggers.ClientAcknowledged);
         }
 
         if (dataStatusToBeReached == Variable.DataStatus.Synchronized)
         {
-            _variable.ChangeStatus(Variable.Triggers.ClientSendsUpdate);
+            _variable.ChangeStateWithTrigger(Variable.Triggers.ClientSendsUpdate);
         }
     }
 }

@@ -186,7 +186,7 @@ public static class InternalCommBlock
     {
         if (dataStore.TryGetDataFromStore(variableName, out Variable variableContents))
         {
-            return variableContents.GetValueBytes();
+            return variableContents.GetValueAsBytes();
         }
     
         var contentsValue = new byte[length];
@@ -284,8 +284,8 @@ public static class InternalCommBlock
             variable.VariableName,
             DataConversion.FromBytes(dataBlock[variable.OffsetInBlock..(variable.OffsetInBlock + variable.Length)], 
                 new StringDataConverter()));
-        newVariable.SetTrigger(Variable.Triggers.ClientSendsUpdate);
-        newVariable.ChangeStatus(Variable.Triggers.ClientSendsUpdate);
+        newVariable.SetCurrentTrigger(Variable.Triggers.ClientSendsUpdate);
+        newVariable.ChangeStateWithTrigger(Variable.Triggers.ClientSendsUpdate);
         return newVariable;
     }
 
@@ -301,8 +301,8 @@ public static class InternalCommBlock
             variable.VariableName,
             DataConversion.FromBytes(dataBlock[variable.OffsetInBlock..(variable.OffsetInBlock + variable.Length)], 
                 new Int32DataConverter()));
-        newVariable.SetTrigger(Variable.Triggers.ClientSendsUpdate);
-        newVariable.ChangeStatus(Variable.Triggers.ClientSendsUpdate);
+        newVariable.SetCurrentTrigger(Variable.Triggers.ClientSendsUpdate);
+        newVariable.ChangeStateWithTrigger(Variable.Triggers.ClientSendsUpdate);
         return newVariable;
     }
 
@@ -318,8 +318,8 @@ public static class InternalCommBlock
             variable.VariableName,
             DataConversion.FromBytes(dataBlock[variable.OffsetInBlock..(variable.OffsetInBlock + variable.Length)], 
                 new Int64DataConverter()));
-        newVariable.SetTrigger(Variable.Triggers.ClientSendsUpdate);
-        newVariable.ChangeStatus(Variable.Triggers.ClientSendsUpdate);
+        newVariable.SetCurrentTrigger(Variable.Triggers.ClientSendsUpdate);
+        newVariable.ChangeStateWithTrigger(Variable.Triggers.ClientSendsUpdate);
         return newVariable;
     }
 
