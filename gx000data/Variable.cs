@@ -115,13 +115,25 @@ namespace gx000data
         private Triggers _currentTrigger;
 
         public string Name { get; }
+        public string Type { get; }
+        public int Length { get; }
+        public int BlockNumber { get; }
+        public int OffsetInBlock { get; }
+        public bool UserIsBoss { get; }
 
         public event EventHandler<StatusChangedEventArgs> StatusChanged;
 
         protected Variable(string name)
         {
             Name = name;
-            _stateMachine = new DataStatusStateMachine(Name);
+            var variableAttributes = VariableDefinitions.GetVariableAttributes(Name);
+            Type = variableAttributes.Type;
+            Length = variableAttributes.Length;
+            BlockNumber = variableAttributes.BlockNumber;
+            OffsetInBlock = variableAttributes.OffsetInBlock;
+            UserIsBoss = variableAttributes.UserIsBoss;
+            
+            _stateMachine = new DataStatusStateMachine(Name, UserIsBoss);
             _currentTrigger = Triggers.NoAction;
         }
 
@@ -212,7 +224,9 @@ namespace gx000data
             /// </summary>
             private readonly Dictionary<DataStatus, List<Triggers>> _triggers;
 
-            private readonly string _variableName;
+            private string _variableName;
+
+            private bool _userIsBoss;
 
             /// <summary>
             /// Represents a state machine for managing the data status transitions in the system.
@@ -222,8 +236,9 @@ namespace gx000data
             /// data updates from simulation to client, and data updates from client to simulation,
             /// along with their progress and failure states.
             /// </remarks>
-            public DataStatusStateMachine(string variableName) : base(DataStatus.StatusNotSet)
+            public DataStatusStateMachine(string variableName, bool userIsBoss) : base(DataStatus.StatusNotSet)
             {
+                _userIsBoss = userIsBoss;
                 _variableName = variableName;
                 Configure(DataStatus.Synchronized)
                     .Permit(Triggers.SimSendsUpdate, DataStatus.FromSimToClientInProgress)
@@ -233,7 +248,7 @@ namespace gx000data
                     .Permit(Triggers.ClientUpdateFailed, DataStatus.FailedCommunication);
                 Configure(DataStatus.FromClientToSim)
                     .PermitIf(Triggers.SimSendsUpdate, DataStatus.FromSimToClientInProgress,
-                        () => !VariableDefinitions.FindVariableAttributes(variableName).UserIsBoss)
+                        () => !_userIsBoss)
                     .Permit(Triggers.ClientSendsUpdate, DataStatus.FromClientToSimInProgress);
                 Configure(DataStatus.FromClientToSimInProgress)
                     .Permit(Triggers.SimAcknowledged, DataStatus.Synchronized)
@@ -241,7 +256,7 @@ namespace gx000data
                 Configure(DataStatus.FromSimToClient)
                     .Permit(Triggers.SimSendsUpdate, DataStatus.FromSimToClientInProgress)
                     .PermitIf(Triggers.ClientSendsUpdate, DataStatus.FromSimToClientInProgress,
-                        () => VariableDefinitions.FindVariableAttributes(variableName).UserIsBoss);
+                        () => _userIsBoss);
                 Configure(DataStatus.StatusNotSet)
                     .Permit(Triggers.SimSendsUpdate, DataStatus.FromSimToClient)
                     .Permit(Triggers.ClientSendsUpdate, DataStatus.FromClientToSim);
@@ -262,7 +277,7 @@ namespace gx000data
             /// <param name="triggers">The triggers to be added to the specified data status.</param>
             private void AddTrigger(DataStatus status, params Triggers[] triggers)
             {
-                var isBoss = VariableDefinitions.FindVariableAttributes(_variableName).UserIsBoss;
+                var isBoss = _userIsBoss;
                 if (!_triggers.ContainsKey(status))
                 {
                     _triggers[status] = new List<Triggers>();

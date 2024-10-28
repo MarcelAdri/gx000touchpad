@@ -49,7 +49,7 @@ public abstract class TypeVariable<T> : Variable
             lock(_lock)
             {
                 byte[] valueInBytes = DataConversion.ToBytes(value, _converter);
-                _dataValue = SetDataLength(valueInBytes, Name);
+                _dataValue = SetDataLength(valueInBytes);
             }
         }
     }
@@ -69,7 +69,7 @@ public abstract class TypeVariable<T> : Variable
         IDataConverter<T> converter) 
             : base(variableName)
     {
-        AssertVariableType(variableName, expectedType);
+        AssertVariableType(expectedType);
         _converter = converter;
         Value = dataValue;
     }
@@ -80,22 +80,19 @@ public abstract class TypeVariable<T> : Variable
     /// If the length of the provided data is too short, the data is padded at the end with spaces
     /// </summary>
     /// <param name="dataValue">The data value to be adjusted for length.</param>
-    /// <param name="variableName">The name of the variable.</param>
     /// <returns>The adjusted data value.</returns>
-    private byte[] SetDataLength(byte[] dataValue, string variableName)
+    private byte[] SetDataLength(byte[] dataValue)
     {
-        IVariableAttributes thisVariable = VariableDefinitions.FindVariableAttributes(variableName);
-        var requiredLength = thisVariable.Length;
-        if (VariableDefinitions.SizeMatters(thisVariable.Type))
+        if (VariableDefinitions.SizeMatters(Type))
         {
-            if (dataValue.Length > requiredLength)
+            if (dataValue.Length > Length)
             {
-                return DecreaseDataLength(dataValue, requiredLength);
+                return DecreaseDataLength(dataValue, Length);
             }
 
-            if (dataValue.Length < requiredLength)
+            if (dataValue.Length < Length)
             {
-                return IncreaseDataLength(dataValue, requiredLength);
+                return IncreaseDataLength(dataValue, Length);
             }
         }
         return dataValue;
@@ -138,19 +135,12 @@ public abstract class TypeVariable<T> : Variable
     /// <summary>
     /// Asserts the type of a variable.
     /// </summary>
-    /// <param name="variableName">The name of the variable.</param>
     /// <param name="expectedType">The expected type of the variable.</param>
     /// <exception cref="ArgumentException">Thrown when variableName is empty
     /// or expectedType is not consistent with the variable definition.</exception>
-    private void AssertVariableType(string variableName, string expectedType)
+    private void AssertVariableType(string expectedType)
     {
-        if (String.IsNullOrWhiteSpace(variableName))
-        {
-            throw new ArgumentException("Variable name cannot be empty.");
-        }
-
-        IVariableAttributes thisVariable = VariableDefinitions.FindVariableAttributes(variableName);
-        if (thisVariable.Type != expectedType)
+        if (Type != expectedType)
         {
             throw new ArgumentException("Variable type mismatch.");
         }

@@ -98,7 +98,6 @@ public class StringVariableTests
 
         // Act
         var actualTriggers = _variable.GetAvailableTriggers();
-        var isBoss = VariableDefinitions.FindVariableAttributes(_variable.Name).UserIsBoss;
 
         // Assert
         Assert.That(actualTriggers.Count, Is.EqualTo(expectedCount), "Actual number of triggers was not correct");

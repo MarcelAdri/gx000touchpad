@@ -73,7 +73,7 @@ public static class InternalCommBlock
             dataBlock[..VariableDefinitions.ByteSizeOfBlockNumber]));
         foreach (var variableName in BlockContents[blockNumber])
         {
-            var attributes = VariableDefinitions.FindVariableAttributes(variableName);
+            var attributes = VariableDefinitions.GetVariableAttributes(variableName);
             var dataValue = dataBlock[attributes.OffsetInBlock..(attributes.OffsetInBlock + attributes.Length)];
             
             
@@ -158,9 +158,10 @@ public static class InternalCommBlock
     {
         var blockBytes = new byte[VariableDefinitions.BlockSize];
         var totalLength = 0;
+        
         foreach (var variableName in blockContents)
         {
-            var variableAttributes = VariableDefinitions.FindVariableAttributes(variableName);
+            var variableAttributes = VariableDefinitions.GetVariableAttributes(variableName);
 
             byte[] contentsValue = GetVariableBytesOrDefault(dataStore, variableName, variableAttributes.Length);
 

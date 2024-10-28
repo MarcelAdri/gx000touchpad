@@ -170,7 +170,7 @@ public static class VariableDefinitions
     /// <exception cref="ArgumentNullException">Thrown when the variableName parameter is null or whitespace.</exception>
     /// <exception cref="KeyNotFoundException">Thrown when no variable with the specified name is found.</exception>
     /// <remarks>Make sure to pass a valid variable name to this method in order to retrieve the corresponding variable attributes.</remarks>
-    public static IVariableAttributes FindVariableAttributes(string variableName)
+    public static IVariableAttributes GetVariableAttributes(string variableName)
     {
         if (String.IsNullOrWhiteSpace(variableName))
             throw new ArgumentNullException(nameof(variableName), "variableName may not be null.");

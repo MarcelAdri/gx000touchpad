@@ -47,18 +47,18 @@ public class InternalCommBlockTests
         _firstMessage = "AbCdEfGhIj";
         _firstMessageBytes = DataConversion.ToBytes(_firstMessage, new StringDataConverter());
         _firstMessageOffset = VariableDefinitions.
-            FindVariableAttributes(VariableDefinitions.FirstMessageName).OffsetInBlock;
-        _firstMessageLength = VariableDefinitions.FindVariableAttributes(VariableDefinitions.FirstMessageName).Length;
+            GetVariableAttributes(VariableDefinitions.FirstMessageName).OffsetInBlock;
+        _firstMessageLength = VariableDefinitions.GetVariableAttributes(VariableDefinitions.FirstMessageName).Length;
         _firstNumber = 195;
         _firstNumberBytes = DataConversion.ToBytes(_firstNumber, new Int32DataConverter());
         _firstNumberOffset = VariableDefinitions.
-            FindVariableAttributes(VariableDefinitions.FirstNumberName).OffsetInBlock;
-        _firstNumberLength = VariableDefinitions.FindVariableAttributes(VariableDefinitions.FirstNumberName).Length;
+            GetVariableAttributes(VariableDefinitions.FirstNumberName).OffsetInBlock;
+        _firstNumberLength = VariableDefinitions.GetVariableAttributes(VariableDefinitions.FirstNumberName).Length;
         _firstLong = 1000000000L;
         _firstLongBytes = DataConversion.ToBytes(_firstLong, new Int64DataConverter());
         _firstLongOffset = VariableDefinitions.
-            FindVariableAttributes(VariableDefinitions.FirstLongName).OffsetInBlock;
-        _firstLongLength = VariableDefinitions.FindVariableAttributes(VariableDefinitions.FirstLongName).Length;
+            GetVariableAttributes(VariableDefinitions.FirstLongName).OffsetInBlock;
+        _firstLongLength = VariableDefinitions.GetVariableAttributes(VariableDefinitions.FirstLongName).Length;
         _defaultFiller = 32;
         
 

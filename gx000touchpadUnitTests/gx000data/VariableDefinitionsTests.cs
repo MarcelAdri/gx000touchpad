@@ -56,9 +56,9 @@ public class VariableDefinitionsTests
     }
     
     [Test]
-    public void FindVariableAttributes_WhenCalledWithValidName_ReturnAttributes()
+    public void GetVariableAttributes_WhenCalledWithValidName_ReturnAttributes()
     {
-        var result = VariableDefinitions.FindVariableAttributes(VariableDefinitions.FirstMessageName);
+        var result = VariableDefinitions.GetVariableAttributes(VariableDefinitions.FirstMessageName);
         
         Assert.That(result.VariableName, Is.EqualTo(VariableDefinitions.FirstMessageName));
     }
@@ -66,7 +66,7 @@ public class VariableDefinitionsTests
     [Test]
     public void FindVariableAttributes_WhenCalledWithInvalidName_ThrowKeyNotFoundException()
     {
-        Assert.That(() => VariableDefinitions.FindVariableAttributes("AnyName"), 
+        Assert.That(() => VariableDefinitions.GetVariableAttributes("AnyName"), 
             Throws.TypeOf<KeyNotFoundException>());
     }
     
@@ -76,7 +76,7 @@ public class VariableDefinitionsTests
     [TestCase(" ")]
     public void FindVariableAttributes_WhenCalledEmptyName_ThrowArgumentNullException(string? name)
     {
-        Assert.That(() => VariableDefinitions.FindVariableAttributes(name), 
+        Assert.That(() => VariableDefinitions.GetVariableAttributes(name), 
             Throws.ArgumentNullException);
     }
 }
