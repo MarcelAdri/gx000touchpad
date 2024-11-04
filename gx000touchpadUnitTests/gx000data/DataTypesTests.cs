@@ -38,9 +38,9 @@ public class DataTypesTests
         var numberOfTypes = 3;
         
         Assert.That(DataTypes.Instance.ValidTypes.Count, Is.EqualTo(numberOfTypes), "Number of types is correct");
-        Assert.IsTrue(DataTypes.Instance.ValidTypes.Contains(availableType1), "StringType is found");
-        Assert.IsTrue(DataTypes.Instance.ValidTypes.Contains(availableType2), "IntType is found");
-        Assert.IsTrue(DataTypes.Instance.ValidTypes.Contains(availableType3), "LongType is found");
+        Assert.That(DataTypes.Instance.ValidTypes.Contains(availableType1), "StringType is found");
+        Assert.That(DataTypes.Instance.ValidTypes.Contains(availableType2), "IntType is found");
+        Assert.That(DataTypes.Instance.ValidTypes.Contains(availableType3), "LongType is found");
         
     }
 

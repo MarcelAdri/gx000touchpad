@@ -173,7 +173,7 @@ public class Int64VariableTests
         _variable.ChangeStateWithTrigger(Variable.Triggers.ClientSendsUpdate);
 
         // Assert
-        Assert.IsTrue(_variable.OnStatusChangedCalled);
+        Assert.That(_variable.OnStatusChangedCalled);
     }
 
     private void SetDataStatus(Variable.DataStatus dataStatusToBeReached)
