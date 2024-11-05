@@ -56,6 +56,34 @@ public class RandomGeneratorTests
         
         Assert.Throws<ArgumentOutOfRangeException>(() => _randomGenerator.RandomIntNumber(min, max));
     }
+    [Test]
+    public void RandomLongNumber_WhenCalled_ShouldReturnRandomNumberBetweenMinAndMax()
+    {
+        long min = 1000000000L;
+        long max = min + 10L;
+
+        long result = _randomGenerator.RandomLongNumber(min, max);
+
+        Assert.That(result, Is.GreaterThanOrEqualTo(min).And.LessThan(max));
+    }
+
+    [Test]
+    public void RandomLongNumber_MinIsGreaterThanMax_ThrowArgumentOutOfRangeException()
+    {
+        long min = 1000000000L;
+        long max = 0L;
+        
+        Assert.Throws<ArgumentOutOfRangeException>(() => _randomGenerator.RandomLongNumber(min, max));
+    }
+    
+    [Test]
+    public void RandomLongNumber_MinIsEqualToMax_ThrowArgumentOutOfRangeException()
+    {
+        long min = 1000000000L;
+        long max = min;
+        
+        Assert.Throws<ArgumentOutOfRangeException>(() => _randomGenerator.RandomLongNumber(min, max));
+    }
     
     [Test]
     public void GenerateRandomString_WhenCalled_ShouldReturnRandomStringWithSpecifiedSizeAndOffset()

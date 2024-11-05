@@ -54,6 +54,27 @@ public class RandomGenerator
     }
 
     /// <summary>
+    /// Generates a random long number between the specified minimum and maximum values (exclusive).
+    /// </summary>
+    /// <param name="min">The minimum value (exclusive).</param>
+    /// <param name="max">The maximum value (exclusive).</param>
+    /// <returns>A random long number between the specified minimum and maximum values (exclusive).</returns>
+    /// <exception cref="ArgumentOutOfRangeException">Thrown when min is not less than max.</exception>
+    public long RandomLongNumber(long min, long max)
+    {
+        if (min >= max)
+        {
+            throw new ArgumentOutOfRangeException(nameof(min), "max has to be greater than min.");
+        }
+
+        lock (_lock)
+        {
+            return _random.NextInt64(min, max);    
+        }
+        
+    }
+
+    /// <summary>
     /// Generates a random string of the specified size using the given offset.
     /// </summary>
     /// <param name="size">The size of the random string to generate.</param>
