@@ -1,0 +1,1 @@
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\gx000server.csproj;x64

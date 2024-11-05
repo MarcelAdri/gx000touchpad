@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Windows Machine": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000server\\bin\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\gx000server.exe",
+      "nativeDebugging": false
+    }
+  }
+}
