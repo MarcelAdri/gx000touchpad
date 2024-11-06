@@ -2206,6 +2206,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-android34.0/android-arm": {
@@ -4412,6 +4422,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
         }
       }
     },
@@ -6620,6 +6640,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-android34.0/android-x64": {
@@ -8826,6 +8856,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
         }
       }
     },
@@ -11034,6 +11074,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-android34.0/iossimulator-x64": {
@@ -13240,6 +13290,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
         }
       }
     },
@@ -15448,6 +15508,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-android34.0/win10-x64": {
@@ -17655,6 +17725,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-ios18.0": {
@@ -18075,6 +18155,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
         }
       }
     },
@@ -18497,6 +18587,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-ios18.0/android-arm64": {
@@ -18917,6 +19017,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
         }
       }
     },
@@ -19339,6 +19449,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-ios18.0/android-x86": {
@@ -19759,6 +19879,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
         }
       }
     },
@@ -20181,6 +20311,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-ios18.0/maccatalyst-x64": {
@@ -20601,6 +20741,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
         }
       }
     },
@@ -21023,6 +21173,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst18.0": {
@@ -21443,6 +21603,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
         }
       }
     },
@@ -21865,6 +22035,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst18.0/android-arm64": {
@@ -22285,6 +22465,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
         }
       }
     },
@@ -22707,6 +22897,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst18.0/android-x86": {
@@ -23127,6 +23327,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
         }
       }
     },
@@ -23549,6 +23759,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst18.0/maccatalyst-x64": {
@@ -23970,6 +24190,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst18.0/win10-x64": {
@@ -24390,6 +24620,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
         }
       }
     },
@@ -24981,6 +25221,16 @@
             "rid": "win10-x86"
           }
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/android-arm": {
@@ -25530,6 +25780,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
         }
       }
     },
@@ -26081,6 +26341,16 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/android-x64": {
@@ -26630,6 +26900,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
         }
       }
     },
@@ -27181,6 +27461,16 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/iossimulator-x64": {
@@ -27731,6 +28021,16 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/maccatalyst-x64": {
@@ -28280,6 +28580,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
         }
       }
     },
@@ -28836,6 +29146,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "GeneralUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/GeneralUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneralUtilities.dll": {}
         }
       }
     }
@@ -33021,28 +33341,37 @@
         "xamarin.kotlinx.coroutines.core.jvm.1.7.2.1.nupkg.sha512",
         "xamarin.kotlinx.coroutines.core.jvm.nuspec"
       ]
+    },
+    "GeneralUtilities/1.0.0": {
+      "type": "project",
+      "path": "../GeneralUtilities/GeneralUtilities.csproj",
+      "msbuildProject": "../GeneralUtilities/GeneralUtilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-android34.0": [
+      "GeneralUtilities >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
       "Microsoft.NET.ILLink.Tasks >= 8.0.10"
     ],
     "net8.0-ios18.0": [
+      "GeneralUtilities >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
       "Microsoft.NET.ILLink.Tasks >= 8.0.10"
     ],
     "net8.0-maccatalyst18.0": [
+      "GeneralUtilities >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
       "Microsoft.NET.ILLink.Tasks >= 8.0.10"
     ],
     "net8.0-windows10.0.19041": [
+      "GeneralUtilities >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82"
@@ -33083,19 +33412,35 @@
       "frameworks": {
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj": {
+              "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj"
+            }
+          }
         },
         "net8.0-ios18.0": {
           "targetAlias": "net8.0-ios",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj": {
+              "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj"
+            }
+          }
         },
         "net8.0-maccatalyst18.0": {
           "targetAlias": "net8.0-maccatalyst",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj": {
+              "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj"
+            }
+          }
         },
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj": {
+              "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

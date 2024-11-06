@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gx000server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+0da1b86f57ef7585e5f19561e0bdfeb0ffe894b2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f2de94578f0f3911d4db86e38c7fd9b7c861c018")]
 [assembly: System.Reflection.AssemblyProductAttribute("gx000server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gx000server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1108,6 +1108,9 @@
     <AppxPackagedFile Include="C:\Users\AchttienbvMarcelAdri\.nuget\packages\microsoft.graphics.win2d\1.2.0\runtimes\win-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\GeneralUtilities\bin\Debug\net8.0\GeneralUtilities.dll">
+      <PackagePath>GeneralUtilities.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MsixContent\Microsoft.UI.Xaml.Controls.pri">
       <PackagePath>Microsoft.UI.Xaml.Controls.pri</PackagePath>
     </AppxPackagedFile>

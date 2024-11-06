@@ -4,5 +4,11 @@
         <name>gx000server</name>
     </assembly>
     <members>
+        <member name="T:gx000server.GenerateFlightSimContent">
+            <summary>
+            Generates variable content in a continuous loop for testing purposes.
+            TODO: will be replaced by getting content from FlightSim.
+            </summary>
+        </member>
     </members>
 </doc>

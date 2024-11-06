@@ -6,6 +6,8 @@ C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-android\com.companyname.gx000server-Signed.aab
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-android\com.companyname.gx000server-Signed.apk
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-android\com.companyname.gx000server-Signed.apk.idsig
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-android\GeneralUtilities.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-android\GeneralUtilities.pdb
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\build.props
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\adb.props
@@ -123,6 +125,7 @@ C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\gx000server.csproj.CoreCompileInputs.cache
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\gx000server.sourcelink.json
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\XamlC.stamp
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\gx000ser.4DDF8AF5.Up2Date
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\gx000server.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\gx000server.pdb
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\gx000server.genruntimeconfig.cache
@@ -145,6 +148,8 @@ C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\es\Microsoft.Maui.Controls.resources.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\fi\Microsoft.Maui.Controls.resources.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\fr\Microsoft.Maui.Controls.resources.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\GeneralUtilities.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\GeneralUtilities.pdb
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\GoogleGson.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\gx000server.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\gx000server.pdb
