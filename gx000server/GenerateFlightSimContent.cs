@@ -1,4 +1,6 @@
-﻿using GeneralUtilities;
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using GeneralUtilities;
 
 namespace gx000server;
 
@@ -6,7 +8,7 @@ namespace gx000server;
 /// Generates variable content in a continuous loop for testing purposes.
 /// TODO: will be replaced by getting content from FlightSim.
 /// </summary>
-public class GenerateFlightSimContent
+public class GenerateFlightSimContent : INotifyPropertyChanged
 {
     private Thread _thread;
     private bool _running;
@@ -18,9 +20,8 @@ public class GenerateFlightSimContent
     private string _intValue;
     private string _longValue;
 
-    public event EventHandler MessageValueChanged;
-    public event EventHandler IntegerValueChanged;
-    public event EventHandler LongValueChanged;
+    public event PropertyChangedEventHandler? PropertyChanged;
+
     public string MessageValue
     {
         get => _messageValue;
@@ -29,7 +30,7 @@ public class GenerateFlightSimContent
             if (_messageValue != value)
             {
                 _messageValue = value;
-                OnMessageChanged(EventArgs.Empty);
+                OnPropertyChanged(nameof(MessageValue));
             }
         }
     }
@@ -40,7 +41,7 @@ public class GenerateFlightSimContent
             if (_intValue != value)
             {
                 _intValue = value;
-                OnIntegerChanged(EventArgs.Empty);
+                OnPropertyChanged(nameof(IntValue));
             }   
         } 
     }
@@ -53,7 +54,7 @@ public class GenerateFlightSimContent
             if (_longValue != value)
             {
                 _longValue = value;
-                OnLongChanged(EventArgs.Empty);
+                OnPropertyChanged(nameof(LongValue));
             }   
         }
     }
@@ -74,6 +75,7 @@ public class GenerateFlightSimContent
     {
         while (_running)
         {
+            Console.WriteLine("Running...");
             var now = DateTime.Now;
             if (now - _startTimeMessage > TimeSpan.FromSeconds(10))
             {
@@ -89,27 +91,23 @@ public class GenerateFlightSimContent
             }
             Thread.Sleep(1000);
         }
+        Console.WriteLine("Thread beëindigd");
     }
 
     public void Stop()
     {
+        Console.WriteLine("Stopping");
         _running = false;
         if (_thread != null && _thread.IsAlive)
         {
             _thread.Join();
         }
+        Console.WriteLine("Thread beëindigd succesvol");
     }
-    protected virtual void OnMessageChanged(EventArgs e)
+    protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
     {
-        MessageValueChanged?.Invoke(this, e);
-    }
-    protected virtual void OnIntegerChanged(EventArgs e)
-    {
-        IntegerValueChanged?.Invoke(this, e);
-    }
-    protected virtual void OnLongChanged(EventArgs e)
-    {
-        LongValueChanged?.Invoke(this, e);
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+
     }
     private string SetNewLong()
     {
@@ -136,10 +134,8 @@ public class GenerateFlightSimContent
         
         var result = _randomGenerator.GenerateRandomString(10, offset);
         
-        //Console.WriteLine(result);
-
         return result;
     }
 
-    
+
 }

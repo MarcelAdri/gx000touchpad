@@ -22,6 +22,7 @@ C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Web.WebView2.Core.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.ApplicationModel.Resources.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Widgets.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Insights.Resource.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MRM.dll
@@ -224,7 +225,6 @@ C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Power.winmd
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.winmd
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Widgets.winmd
-C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\gx000server.exe
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\gx000server.deps.json
@@ -327,11 +327,6 @@ C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.stamp
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf
-C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
-C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
-C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
-C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png
-C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png
@@ -378,6 +373,11 @@ C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.stamp
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.outputs
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\gx000server.AssemblyInfoInputs.cache

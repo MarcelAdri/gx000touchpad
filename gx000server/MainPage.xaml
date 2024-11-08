@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:gx000Server="clr-namespace:gx000server"
              x:Class="gx000server.MainPage">
 
     <ScrollView>
@@ -22,7 +23,7 @@
                 
                 <Label
                     x:Name="FirstMessageLabel"
-                    Text="Hello, World!"
+                    Text="{Binding SimContent.MessageValue}"
                     Style="{StaticResource Headline}"
                     SemanticProperties.HeadingLevel="Level1" />    
             </HorizontalStackLayout>
@@ -36,7 +37,7 @@
                 
                 <Label
                     x:Name="FirstIntegerLabel"
-                    Text="Hello, World!"
+                    Text="{Binding SimContent.IntValue}"
                     Style="{StaticResource Headline}"
                     SemanticProperties.HeadingLevel="Level1" />    
             </HorizontalStackLayout>
@@ -50,7 +51,7 @@
                 
                 <Label
                     x:Name="FirstLongLabel"
-                    Text="Hello, World!"
+                    Text="{Binding SimContent.LongValue}"
                     Style="{StaticResource Headline}"
                     SemanticProperties.HeadingLevel="Level1" />    
             </HorizontalStackLayout>
