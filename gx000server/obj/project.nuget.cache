@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "R26uz96fg18=",
+  "dgSpecHash": "wLi/fixd1Ak=",
   "success": true,
   "projectFilePath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000server\\gx000server.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.10\\microsoft.net.illink.tasks.8.0.10.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240627000\\microsoft.windowsappsdk.1.5.240627000.nupkg.sha512",
+    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\stateless\\5.16.0\\stateless.5.16.0.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.reactive\\6.0.1\\system.reactive.6.0.1.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\xamarin.android.glide\\4.15.1.2\\xamarin.android.glide.4.15.1.2.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\xamarin.android.glide.annotations\\4.15.1.2\\xamarin.android.glide.annotations.4.15.1.2.nupkg.sha512",

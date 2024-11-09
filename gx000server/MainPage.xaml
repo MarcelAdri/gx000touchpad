@@ -4,59 +4,100 @@
              xmlns:gx000Server="clr-namespace:gx000server"
              x:Class="gx000server.MainPage">
 
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <gx000Server:ObjectToStringConverter x:Key="ObjectToStringConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
+        <HorizontalStackLayout>
+            <VerticalStackLayout
+                Padding="30,0"
+                Spacing="25">
+                <Label
+                    Text="GenerateFlightSimContent"
+                    Style="{StaticResource Headline}"
+                    HorizontalOptions="Center" />
+                <HorizontalStackLayout
+                    HorizontalOptions="Center">
+                    <Label
+                        Text="First message: " />
 
-            <HorizontalStackLayout
-                HorizontalOptions="Center" >
-                <Label
-                    Text="First message: "
-                    Style="{StaticResource Headline}"
-                    SemanticProperties.HeadingLevel="Level1" />
-                
-                <Label
-                    x:Name="FirstMessageLabel"
-                    Text="{Binding SimContent.MessageValue}"
-                    Style="{StaticResource Headline}"
-                    SemanticProperties.HeadingLevel="Level1" />    
-            </HorizontalStackLayout>
-            
-            <HorizontalStackLayout
-                HorizontalOptions="Center" >
-                <Label
-                    Text="First integer: "
-                    Style="{StaticResource Headline}"
-                    SemanticProperties.HeadingLevel="Level1" />
-                
-                <Label
-                    x:Name="FirstIntegerLabel"
-                    Text="{Binding SimContent.IntValue}"
-                    Style="{StaticResource Headline}"
-                    SemanticProperties.HeadingLevel="Level1" />    
-            </HorizontalStackLayout>
-            
-            <HorizontalStackLayout
-                HorizontalOptions="Center" >
-                <Label
-                    Text="First long integer: "
-                    Style="{StaticResource Headline}"
-                    SemanticProperties.HeadingLevel="Level1" />
-                
-                <Label
-                    x:Name="FirstLongLabel"
-                    Text="{Binding SimContent.LongValue}"
-                    Style="{StaticResource Headline}"
-                    SemanticProperties.HeadingLevel="Level1" />    
-            </HorizontalStackLayout>
+                    <Label
+                        x:Name="FirstMessageLabel"
+                        Text="{Binding SimContent.FirstMessage}" />
+                </HorizontalStackLayout>
 
-        </VerticalStackLayout>
+                <HorizontalStackLayout
+                    HorizontalOptions="Center">
+                    <Label
+                        Text="First integer: " />
+
+                    <Label
+                        x:Name="FirstIntegerLabel"
+                        Text="{Binding SimContent.FirstNumber}" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout
+                    HorizontalOptions="Center">
+                    <Label
+                        Text="First long integer: " />
+
+                    <Label
+                        x:Name="FirstLongLabel"
+                        Text="{Binding SimContent.FirstLong}" />
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>  
+            <VerticalStackLayout
+                Padding="30,0"
+                Spacing="25">
+                <Label
+                    Text="ProcessSimData"
+                    Style="{StaticResource Headline}"
+                    HorizontalOptions="Center" />
+                <HorizontalStackLayout
+                    HorizontalOptions="Center">
+                    <Label
+                        Text="Variable name: " />
+
+                    <Label
+                        x:Name="VariableNameLabel"
+                        Text="{Binding DataProcess.VariableName}" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout
+                    HorizontalOptions="Center">
+                    <Label
+                        Text="Variable type: " />
+
+                    <Label
+                        x:Name="DataTypeLabel"
+                        Text="{Binding DataProcess.DataType}" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout
+                    HorizontalOptions="Center">
+                    <Label
+                        Text="Current Variable: " />
+
+                    <Label
+                        x:Name="CurrentVariableLabel"
+                        Text="{Binding DataProcess.CurrentVariable.Name}" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout
+                    HorizontalOptions="Center">
+                    <Label
+                        Text="Current Variable value: " />
+
+                    <Label
+                        x:Name="CurrentVariablevalueLabel"
+                        Text="{Binding DataProcess.CurrentVariable.Value, Converter={StaticResource ObjectToStringConverter}}" />
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>  
+        </HorizontalStackLayout>
+        
     </ScrollView>
 
 </ContentPage>

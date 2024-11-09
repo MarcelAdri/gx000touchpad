@@ -7,7 +7,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        //_generator = new GenerateFlightSimContent();
+        
         if (_viewModel == null)
         {
             _viewModel = new ViewModel();    
@@ -20,11 +20,15 @@ public partial class MainPage : ContentPage
         {
             app.ViewModel = _viewModel;
         }
+
+       
+
     }
 
     protected override void OnDisappearing()
     {
         base.OnDisappearing();
         _viewModel.SimContent.Stop();
+        _viewModel.DataProcess.Dispose();
     }
 }

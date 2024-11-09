@@ -445,6 +445,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -2231,6 +2244,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -2678,6 +2705,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -4464,6 +4504,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -4911,6 +4965,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -6697,6 +6764,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -7144,6 +7225,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -8930,6 +9024,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -9377,6 +9485,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -11163,6 +11284,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -11610,6 +11745,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -13396,6 +13544,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -13843,6 +14005,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -15629,6 +15804,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -16076,6 +16265,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -17863,6 +18065,20 @@
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
         }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
+        }
       }
     },
     "net8.0-ios18.0": {
@@ -18285,6 +18501,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -18309,6 +18538,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -18732,6 +18975,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -18756,6 +19012,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -19179,6 +19449,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -19203,6 +19486,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -19626,6 +19923,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -19650,6 +19960,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -20073,6 +20397,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -20097,6 +20434,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -20520,6 +20871,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -20544,6 +20908,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -20967,6 +21345,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -20991,6 +21382,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -21414,6 +21819,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -21438,6 +21856,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -21861,6 +22293,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -21885,6 +22330,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -22308,6 +22767,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -22332,6 +22804,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -22755,6 +23241,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -22779,6 +23278,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -23202,6 +23715,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -23226,6 +23752,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -23649,6 +24189,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -23673,6 +24226,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -24096,6 +24663,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -24120,6 +24700,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -24543,6 +25137,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -24567,6 +25174,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -24990,6 +25611,19 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -25014,6 +25648,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -25606,6 +26254,19 @@
           }
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -25633,6 +26294,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -26185,6 +26860,19 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -26212,6 +26900,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -26764,6 +27466,19 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -26791,6 +27506,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -27343,6 +28072,19 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -27370,6 +28112,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -27922,6 +28678,19 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -27949,6 +28718,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -28501,6 +29284,19 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -28528,6 +29324,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -29080,6 +29890,19 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -29107,6 +29930,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     },
@@ -29665,6 +30502,19 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "Stateless/5.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Stateless.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Reactive/6.0.1": {
         "type": "package",
         "compile": {
@@ -29692,6 +30542,20 @@
         },
         "runtime": {
           "bin/placeholder/GeneralUtilities.dll": {}
+        }
+      },
+      "gx000data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "Stateless": "5.16.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000data.dll": {}
         }
       }
     }
@@ -31841,6 +32705,25 @@
         "tools/x86/GenXbf.dll"
       ]
     },
+    "Stateless/5.16.0": {
+      "sha512": "oGMd62r6wdj7LDOl7oOD2wJdjjK1Zum5UnV4lTDLdKiJAfAGF1SRaBKpX1TtmP1QKocPy4+94zazSZfHcowZCw==",
+      "type": "package",
+      "path": "stateless/5.16.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "Stateless.png",
+        "lib/net462/Stateless.dll",
+        "lib/net462/Stateless.xml",
+        "lib/net8.0/Stateless.dll",
+        "lib/net8.0/Stateless.xml",
+        "lib/netstandard2.0/Stateless.dll",
+        "lib/netstandard2.0/Stateless.xml",
+        "stateless.5.16.0.nupkg.sha512",
+        "stateless.nuspec"
+      ]
+    },
     "System.Reactive/6.0.1": {
       "sha512": "rHaWtKDwCi9qJ3ObKo8LHPMuuwv33YbmQi7TcUK1C264V3MFnOr5Im7QgCTdLniztP3GJyeiSg5x8NqYJFqRmg==",
       "type": "package",
@@ -33910,6 +34793,11 @@
       "type": "project",
       "path": "../GeneralUtilities/GeneralUtilities.csproj",
       "msbuildProject": "../GeneralUtilities/GeneralUtilities.csproj"
+    },
+    "gx000data/1.0.0": {
+      "type": "project",
+      "path": "../gx000data/gx000data.csproj",
+      "msbuildProject": "../gx000data/gx000data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -33919,7 +34807,8 @@
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
       "Microsoft.NET.ILLink.Tasks >= 8.0.10",
-      "System.Reactive >= 6.0.1"
+      "System.Reactive >= 6.0.1",
+      "gx000data >= 1.0.0"
     ],
     "net8.0-ios18.0": [
       "GeneralUtilities >= 1.0.0",
@@ -33927,7 +34816,8 @@
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
       "Microsoft.NET.ILLink.Tasks >= 8.0.10",
-      "System.Reactive >= 6.0.1"
+      "System.Reactive >= 6.0.1",
+      "gx000data >= 1.0.0"
     ],
     "net8.0-maccatalyst18.0": [
       "GeneralUtilities >= 1.0.0",
@@ -33935,14 +34825,16 @@
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
       "Microsoft.NET.ILLink.Tasks >= 8.0.10",
-      "System.Reactive >= 6.0.1"
+      "System.Reactive >= 6.0.1",
+      "gx000data >= 1.0.0"
     ],
     "net8.0-windows10.0.19041": [
       "GeneralUtilities >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
-      "System.Reactive >= 6.0.1"
+      "System.Reactive >= 6.0.1",
+      "gx000data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -33983,6 +34875,9 @@
           "projectReferences": {
             "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj": {
               "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj"
+            },
+            "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj": {
+              "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj"
             }
           }
         },
@@ -33991,6 +34886,9 @@
           "projectReferences": {
             "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj": {
               "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj"
+            },
+            "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj": {
+              "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj"
             }
           }
         },
@@ -33999,6 +34897,9 @@
           "projectReferences": {
             "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj": {
               "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj"
+            },
+            "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj": {
+              "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj"
             }
           }
         },
@@ -34007,6 +34908,9 @@
           "projectReferences": {
             "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj": {
               "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\GeneralUtilities\\GeneralUtilities.csproj"
+            },
+            "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj": {
+              "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj"
             }
           }
         }

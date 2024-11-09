@@ -20,7 +20,7 @@ public class GenerateFlightSimContent : INotifyPropertyChanged
 
     public event PropertyChangedEventHandler? PropertyChanged;
 
-    public string MessageValue
+    public string FirstMessage
     {
         get => _messageValue;
         private set
@@ -32,7 +32,7 @@ public class GenerateFlightSimContent : INotifyPropertyChanged
             }
         }
     }
-    public string IntValue { 
+    public string FirstNumber { 
         get => _intValue;
         private set
         {
@@ -44,7 +44,7 @@ public class GenerateFlightSimContent : INotifyPropertyChanged
         } 
     }
 
-    public string LongValue
+    public string FirstLong
     {
         get => _longValue;
         private set
@@ -60,18 +60,18 @@ public class GenerateFlightSimContent : INotifyPropertyChanged
     
     public GenerateFlightSimContent()
     {
-        MessageValue = "FirstMessa";
-        IntValue = "0";
-        LongValue = "0";
+        FirstMessage = "FirstMessa";
+        FirstNumber = "0";
+        FirstLong = "0";
         
-        _messageSubscription = Observable.Interval(TimeSpan.FromSeconds(10))
-            .Subscribe(_ => MessageValue = SetNewMessage());
+        _messageSubscription = Observable.Interval(TimeSpan.FromSeconds(5))
+            .Subscribe(_ => FirstMessage = SetNewMessage());
 
-        _intSubscription = Observable.Interval(TimeSpan.FromSeconds(15))
-            .Subscribe(_ => IntValue = SetNewInt());
+        _intSubscription = Observable.Interval(TimeSpan.FromSeconds(6))
+            .Subscribe(_ => FirstNumber = SetNewInt());
 
-        _longSubscription = Observable.Interval(TimeSpan.FromSeconds(20))
-            .Subscribe(_ => LongValue = SetNewLong());
+        _longSubscription = Observable.Interval(TimeSpan.FromSeconds(7))
+            .Subscribe(_ => FirstLong = SetNewLong());
     }
     
     public void Stop()

@@ -16,6 +16,7 @@ public partial class App : Application
         base.OnSleep();
         
         ViewModel?.SimContent.Stop();
+        ViewModel?.DataProcess.Dispose();
     }
     
 }
