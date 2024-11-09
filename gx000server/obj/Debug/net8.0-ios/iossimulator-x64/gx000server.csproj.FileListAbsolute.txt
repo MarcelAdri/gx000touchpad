@@ -16,6 +16,7 @@ C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.Maui.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.Maui.Essentials.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.Maui.Graphics.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-ios\iossimulator-x64\System.Reactive.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-ios\iossimulator-x64\ar\Microsoft.Maui.Controls.resources.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-ios\iossimulator-x64\ca\Microsoft.Maui.Controls.resources.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-ios\iossimulator-x64\cs\Microsoft.Maui.Controls.resources.dll

@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel;
-using System.Runtime.CompilerServices;
+using System.Reactive.Linq;
 using GeneralUtilities;
 
 namespace gx000server;
@@ -10,15 +10,13 @@ namespace gx000server;
 /// </summary>
 public class GenerateFlightSimContent : INotifyPropertyChanged
 {
-    private Thread _thread;
-    private bool _running;
-    private DateTime _startTimeMessage = DateTime.Now;
-    private DateTime _startTimeInt = DateTime.Now;
-    private DateTime _startTimeLong = DateTime.Now;
     private readonly RandomGenerator _randomGenerator = new ();
     private string _messageValue;
     private string _intValue;
     private string _longValue;
+    private IDisposable? _messageSubscription;
+    private IDisposable? _intSubscription;
+    private IDisposable? _longSubscription;
 
     public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -30,7 +28,7 @@ public class GenerateFlightSimContent : INotifyPropertyChanged
             if (_messageValue != value)
             {
                 _messageValue = value;
-                OnPropertyChanged(nameof(MessageValue));
+                OnPropertyChanged();
             }
         }
     }
@@ -41,7 +39,7 @@ public class GenerateFlightSimContent : INotifyPropertyChanged
             if (_intValue != value)
             {
                 _intValue = value;
-                OnPropertyChanged(nameof(IntValue));
+                OnPropertyChanged();
             }   
         } 
     }
@@ -54,7 +52,7 @@ public class GenerateFlightSimContent : INotifyPropertyChanged
             if (_longValue != value)
             {
                 _longValue = value;
-                OnPropertyChanged(nameof(LongValue));
+                OnPropertyChanged();
             }   
         }
     }
@@ -62,79 +60,46 @@ public class GenerateFlightSimContent : INotifyPropertyChanged
     
     public GenerateFlightSimContent()
     {
-        _running = true;
-        _thread = new Thread(new ThreadStart(Run));
-        _thread.Start();
-
         MessageValue = "FirstMessa";
         IntValue = "0";
         LongValue = "0";
+        
+        _messageSubscription = Observable.Interval(TimeSpan.FromSeconds(10))
+            .Subscribe(_ => MessageValue = SetNewMessage());
+
+        _intSubscription = Observable.Interval(TimeSpan.FromSeconds(15))
+            .Subscribe(_ => IntValue = SetNewInt());
+
+        _longSubscription = Observable.Interval(TimeSpan.FromSeconds(20))
+            .Subscribe(_ => LongValue = SetNewLong());
     }
     
-    private void Run()
-    {
-        while (_running)
-        {
-            Console.WriteLine("Running...");
-            var now = DateTime.Now;
-            if (now - _startTimeMessage > TimeSpan.FromSeconds(10))
-            {
-                MessageValue = SetNewMessage();
-            }
-            if (now - _startTimeInt > TimeSpan.FromSeconds(15))
-            {
-                IntValue = SetNewInt();
-            }
-            if (now - _startTimeLong > TimeSpan.FromSeconds(20))
-            {
-                LongValue = SetNewLong();
-            }
-            Thread.Sleep(1000);
-        }
-        Console.WriteLine("Thread beëindigd");
-    }
-
     public void Stop()
     {
-        Console.WriteLine("Stopping");
-        _running = false;
-        if (_thread != null && _thread.IsAlive)
-        {
-            _thread.Join();
-        }
-        Console.WriteLine("Thread beëindigd succesvol");
+        _messageSubscription?.Dispose();
+        _intSubscription?.Dispose();
+        _longSubscription?.Dispose();
     }
-    protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+    protected virtual void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
     }
     private string SetNewLong()
     {
-        _startTimeLong = DateTime.Now;
-        
-        var result = _randomGenerator.RandomLongNumber(0, Int64.MaxValue).ToString("#,##0");
-
-        return result;
+        return _randomGenerator.RandomLongNumber(0, Int64.MaxValue).ToString("#,##0");
     }
 
     private string SetNewInt()
     {
-        _startTimeInt = DateTime.Now;
-        
-        var result = _randomGenerator.RandomIntNumber(0, Int32.MaxValue).ToString("#,##0");
-
-        return result;
+        return _randomGenerator.RandomIntNumber(0, Int32.MaxValue).ToString("#,##0");
     }
 
     private string SetNewMessage()
     {
-        _startTimeMessage = DateTime.Now;
         char offset = 'A';
         
-        var result = _randomGenerator.GenerateRandomString(10, offset);
-        
-        return result;
+        return _randomGenerator.GenerateRandomString(10, offset);
     }
 
 
