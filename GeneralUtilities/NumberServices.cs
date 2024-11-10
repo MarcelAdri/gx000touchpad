@@ -19,30 +19,28 @@ public static class NumberServices
     public static string UnformatNumber(string formattedNumber)
     {
         ArgumentNullException.ThrowIfNullOrWhiteSpace(formattedNumber);
-        
-        var cultureInfo = CultureInfo.CurrentCulture;
-        var isNumber = false;
-        
-        var decimalSeparator = cultureInfo.NumberFormat.NumberDecimalSeparator[0].ToString();
-        var groupSeparator = cultureInfo.NumberFormat.NumberGroupSeparator[0].ToString();
+    
+        var (decimalSeparator, groupSeparator) = GetSeparators(CultureInfo.CurrentCulture);
+        const string patternTemplate = @"[^0-9{0}-]";
+        var pattern = string.Format(patternTemplate, Regex.Escape(decimalSeparator));
+        var result = Regex.Replace(formattedNumber.Replace(groupSeparator, string.Empty), pattern, "");
+    
+        bool isValidNumber = result.Contains(decimalSeparator)
+            ? decimal.TryParse(result, out _)
+            : BigInteger.TryParse(result, out _);
 
-        string result = formattedNumber.Replace(groupSeparator, string.Empty);
-
-        result = Regex.Replace(result, $@"[^0-9{Regex.Escape(decimalSeparator)}-]", "");
-
-        if (result.Contains(decimalSeparator))
-        {
-            isNumber = decimal.TryParse(result, out _);
-        }
-        else
-        {
-            isNumber = BigInteger.TryParse(result, out _);
-        }
-
-        if (isNumber)
+        if (isValidNumber)
         {
             return result;
         }
-        throw new FormatException($"Invalid number format: {result}");   
+
+        throw new FormatException($"Invalid number format: {result}");
+    }
+
+    private static (string decimalSeparator, string groupSeparator) GetSeparators(CultureInfo cultureInfo)
+    {
+        var decimalSeparator = cultureInfo.NumberFormat.NumberDecimalSeparator[0].ToString();
+        var groupSeparator = cultureInfo.NumberFormat.NumberGroupSeparator[0].ToString();
+        return (decimalSeparator, groupSeparator);
     }
 }
