@@ -6,7 +6,10 @@
         <Nullable>enable</Nullable>
 
         <IsPackable>false</IsPackable>
+
         <IsTestProject>true</IsTestProject>
+        <Configurations>Release;Debug</Configurations>
+        <Platforms>AnyCPU</Platforms>
     </PropertyGroup>
 
     <ItemGroup>
@@ -23,6 +26,8 @@
         </PackageReference>
         <PackageReference Include="NUnit3TestAdapter" Version="5.0.0-beta.3" />
         <PackageReference Include="Stateless" Version="5.16.0" />
+        <PackageReference Include="System.Reactive" Version="5.0.0" />
+        <PackageReference Include="System.Reactive.Linq" Version="5.0.0" />
     </ItemGroup>
 
     <ItemGroup>

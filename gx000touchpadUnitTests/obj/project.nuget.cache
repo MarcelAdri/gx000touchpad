@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "K66vdRTdhAM=",
+  "dgSpecHash": "RKwmDFFps6k=",
   "success": true,
   "projectFilePath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000touchpadUnitTests\\gx000touchpadUnitTests.csproj",
   "expectedPackageFiles": [
@@ -24,7 +24,10 @@
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\stateless\\5.16.0\\stateless.5.16.0.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
-    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
+    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
+    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.reactive.linq\\5.0.0\\system.reactive.linq.5.0.0.nupkg.sha512",
+    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

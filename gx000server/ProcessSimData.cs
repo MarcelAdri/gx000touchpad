@@ -184,8 +184,8 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
         
         var contentValue = propertyInfo.GetValue(_content) as string
             ?? throw new InvalidOperationException($"{VariableName} does not contain a string value.");
-        
-        var numberContentValue = NumberServices.UnformatNumber(contentValue);
+
+        string numberContentValue;
         
         switch (DataType)
         {
@@ -195,6 +195,7 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
                     contentValue);
                 break;
             case "IntType":
+                numberContentValue = NumberServices.UnformatNumber(contentValue);
                 if (int.TryParse(numberContentValue, out var intValue))
                 {
                     CurrentVariable = new Int32Variable(
@@ -207,6 +208,7 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
                 }
                 break;
             case "LongType":
+                numberContentValue = NumberServices.UnformatNumber(contentValue);
                 if (long.TryParse(numberContentValue, out var longValue))
                 {
                     CurrentVariable = new Int64Variable(

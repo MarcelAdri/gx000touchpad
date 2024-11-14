@@ -19,7 +19,7 @@ public static class NumberServices
     public static string UnformatNumber(string formattedNumber)
     {
         ArgumentNullException.ThrowIfNullOrWhiteSpace(formattedNumber);
-    
+        
         var (decimalSeparator, groupSeparator) = GetSeparators(CultureInfo.CurrentCulture);
         const string patternTemplate = @"[^0-9{0}-]";
         var pattern = string.Format(patternTemplate, Regex.Escape(decimalSeparator));
