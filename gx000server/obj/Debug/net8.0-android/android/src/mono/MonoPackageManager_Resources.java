@@ -140,6 +140,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Maui.Controls.resources.dll",
 		"GeneralUtilities.dll",
 		"gx000data.dll",
+		"gx000serverSimComm.dll",
 		"_Microsoft.Android.Resource.Designer.dll",
 	};
 	public static String[] Dependencies = new String[]{

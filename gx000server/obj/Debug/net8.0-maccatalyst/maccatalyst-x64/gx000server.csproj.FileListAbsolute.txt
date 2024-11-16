@@ -258,8 +258,10 @@ C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.dylib
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\GeneralUtilities.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\gx000data.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\gx000serverSimComm.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\GeneralUtilities.pdb
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\gx000data.pdb
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\gx000serverSimComm.pdb
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauifont.inputs
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauisplash.inputs

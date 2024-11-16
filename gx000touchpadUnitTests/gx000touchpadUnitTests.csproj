@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFrameworks>net8.0;net8.0-android;net8.0-ios;net8.0-maccatalyst;net8.0-windows10.0.19041.0</TargetFrameworks>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
 
@@ -10,6 +10,11 @@
         <IsTestProject>true</IsTestProject>
         <Configurations>Release;Debug</Configurations>
         <Platforms>AnyCPU</Platforms>
+
+        <WindowsAppSdkDeploymentManagerInitialize>false</WindowsAppSdkDeploymentManagerInitialize>
+        <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+        
+        <LangVersion>latestmajor</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -26,8 +31,8 @@
         </PackageReference>
         <PackageReference Include="NUnit3TestAdapter" Version="5.0.0-beta.3" />
         <PackageReference Include="Stateless" Version="5.16.0" />
-        <PackageReference Include="System.Reactive" Version="5.0.0" />
-        <PackageReference Include="System.Reactive.Linq" Version="5.0.0" />
+        <PackageReference Include="System.Reactive" Version="6.0.1" />
+        <PackageReference Include="System.Reactive.Linq" Version="6.0.1" />
     </ItemGroup>
 
     <ItemGroup>

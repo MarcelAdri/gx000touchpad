@@ -8,8 +8,10 @@ C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-android\com.companyname.gx000server-Signed.apk.idsig
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-android\GeneralUtilities.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-android\gx000data.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-android\gx000serverSimComm.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-android\GeneralUtilities.pdb
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-android\gx000data.pdb
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\bin\Debug\net8.0-android\gx000serverSimComm.pdb
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\build.props
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\adb.props
@@ -146,6 +148,8 @@ C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\gx000data.pdb
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\gx000server.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\gx000server.pdb
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\gx000serverSimComm.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\gx000serverSimComm.pdb
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\he\Microsoft.Maui.Controls.resources.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\hi\Microsoft.Maui.Controls.resources.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000server\obj\Debug\net8.0-android\android\assets\hr\Microsoft.Maui.Controls.resources.dll

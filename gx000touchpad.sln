@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gx000touchpadUnitTests", "g
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gx000server", "gx000server\gx000server.csproj", "{90470B44-3401-43FA-9B21-DE43C620998D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gx000serverSimComm", "gx000serverSimComm\gx000serverSimComm.csproj", "{13C62ECA-DC90-4D8B-B6E0-AA5C977EEEC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,5 +30,9 @@ Global
 		{90470B44-3401-43FA-9B21-DE43C620998D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7E46AF65-8E3B-482B-90DB-4DA4A6395AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7E46AF65-8E3B-482B-90DB-4DA4A6395AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C62ECA-DC90-4D8B-B6E0-AA5C977EEEC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C62ECA-DC90-4D8B-B6E0-AA5C977EEEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C62ECA-DC90-4D8B-B6E0-AA5C977EEEC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C62ECA-DC90-4D8B-B6E0-AA5C977EEEC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

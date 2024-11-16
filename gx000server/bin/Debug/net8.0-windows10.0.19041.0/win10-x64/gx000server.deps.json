@@ -475,10 +475,23 @@
       "gx000data/1.0.0": {
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "runtime": {
           "gx000data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "runtime": {
+          "gx000serverSimComm.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -678,6 +691,11 @@
       "sha512": ""
     },
     "gx000data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "gx000serverSimComm/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

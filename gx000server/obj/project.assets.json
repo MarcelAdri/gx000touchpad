@@ -2251,13 +2251,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -4511,13 +4526,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -6771,13 +6801,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -9031,13 +9076,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -11291,13 +11351,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -13551,13 +13626,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -15811,13 +15901,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -18071,13 +18176,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -18545,13 +18665,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -19019,13 +19154,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -19493,13 +19643,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -19967,13 +20132,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -20441,13 +20621,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -20915,13 +21110,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -21389,13 +21599,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -21863,13 +22088,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -22337,13 +22577,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -22811,13 +23066,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -23285,13 +23555,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -23759,13 +24044,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -24233,13 +24533,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -24707,13 +25022,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -25181,13 +25511,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -25655,13 +26000,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -26301,13 +26661,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -26907,13 +27282,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -27513,13 +27903,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -28119,13 +28524,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -28725,13 +29145,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -29331,13 +29766,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -29937,13 +30387,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     },
@@ -30549,13 +31014,28 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "compile": {
           "bin/placeholder/gx000data.dll": {}
         },
         "runtime": {
           "bin/placeholder/gx000data.dll": {}
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverSimComm.dll": {}
         }
       }
     }
@@ -34798,6 +35278,11 @@
       "type": "project",
       "path": "../gx000data/gx000data.csproj",
       "msbuildProject": "../gx000data/gx000data.csproj"
+    },
+    "gx000serverSimComm/1.0.0": {
+      "type": "project",
+      "path": "../gx000serverSimComm/gx000serverSimComm.csproj",
+      "msbuildProject": "../gx000serverSimComm/gx000serverSimComm.csproj"
     }
   },
   "projectFileDependencyGroups": {

@@ -9,32 +9,31 @@
       "gx000touchpadUnitTests/1.0.0": {
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Microsoft.Maui.Controls": "9.0.0-rc.2.24503.2",
-          "Microsoft.Maui.Essentials": "9.0.0-rc.2.24503.2",
           "Microsoft.NET.Test.Sdk": "17.11.1",
           "Moq": "4.20.72",
           "NUnit": "4.2.2",
           "NUnit.Analyzers": "4.3.0",
           "NUnit3TestAdapter": "5.0.0-beta.3",
           "Stateless": "5.16.0",
+          "System.Reactive": "6.0.1",
+          "System.Reactive.Linq": "6.0.1",
           "coverlet.collector": "6.0.2",
           "gx000data": "1.0.0",
-          "gx000server": "1.0.0",
-          "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.44"
+          "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.53"
         },
         "runtime": {
           "gx000touchpadUnitTests.dll": {}
         }
       },
-      "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.19041.44": {
+      "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.19041.53": {
         "runtime": {
           "Microsoft.Windows.SDK.NET.dll": {
             "assemblyVersion": "10.0.19041.38",
-            "fileVersion": "10.0.19041.43"
+            "fileVersion": "10.0.19041.52"
           },
           "WinRT.Runtime.dll": {
             "assemblyVersion": "2.1.0.0",
-            "fileVersion": "2.1.2.47512"
+            "fileVersion": "2.1.6.47881"
           }
         }
       },
@@ -52,7 +51,7 @@
       "coverlet.collector/6.0.2": {},
       "Microsoft.ApplicationInsights/2.22.0": {
         "dependencies": {
-          "System.Diagnostics.DiagnosticSource": "9.0.0-rc.2.24473.5"
+          "System.Diagnostics.DiagnosticSource": "5.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.ApplicationInsights.dll": {
@@ -69,308 +68,6 @@
           }
         }
       },
-      "Microsoft.Extensions.Configuration/9.0.0-rc.2.24473.5": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.0-rc.2.24473.5",
-          "Microsoft.Extensions.Primitives": "9.0.0-rc.2.24473.5"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Configuration.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.47305"
-          }
-        }
-      },
-      "Microsoft.Extensions.Configuration.Abstractions/9.0.0-rc.2.24473.5": {
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "9.0.0-rc.2.24473.5"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.47305"
-          }
-        }
-      },
-      "Microsoft.Extensions.DependencyInjection/9.0.0-rc.2.24473.5": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0-rc.2.24473.5"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.47305"
-          }
-        }
-      },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.0-rc.2.24473.5": {
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.47305"
-          }
-        }
-      },
-      "Microsoft.Extensions.Logging/9.0.0-rc.2.24473.5": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "9.0.0-rc.2.24473.5",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.0-rc.2.24473.5",
-          "Microsoft.Extensions.Options": "9.0.0-rc.2.24473.5"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Logging.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.47305"
-          }
-        }
-      },
-      "Microsoft.Extensions.Logging.Abstractions/9.0.0-rc.2.24473.5": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0-rc.2.24473.5",
-          "System.Diagnostics.DiagnosticSource": "9.0.0-rc.2.24473.5"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.47305"
-          }
-        }
-      },
-      "Microsoft.Extensions.Logging.Debug/8.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0-rc.2.24473.5",
-          "Microsoft.Extensions.Logging": "9.0.0-rc.2.24473.5",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.0-rc.2.24473.5"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Logging.Debug.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
-          }
-        }
-      },
-      "Microsoft.Extensions.Options/9.0.0-rc.2.24473.5": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0-rc.2.24473.5",
-          "Microsoft.Extensions.Primitives": "9.0.0-rc.2.24473.5"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Options.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.47305"
-          }
-        }
-      },
-      "Microsoft.Extensions.Primitives/9.0.0-rc.2.24473.5": {
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.47305"
-          }
-        }
-      },
-      "Microsoft.Maui.Controls/9.0.0-rc.2.24503.2": {
-        "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "9.0.0-rc.2.24503.2",
-          "Microsoft.Maui.Controls.Core": "9.0.0-rc.2.24503.2",
-          "Microsoft.Maui.Controls.Xaml": "9.0.0-rc.2.24503.2",
-          "Microsoft.Maui.Resizetizer": "9.0.0-rc.2.24503.2"
-        }
-      },
-      "Microsoft.Maui.Controls.Build.Tasks/9.0.0-rc.2.24503.2": {
-        "dependencies": {
-          "Microsoft.Maui.Controls.Core": "9.0.0-rc.2.24503.2",
-          "Microsoft.Maui.Controls.Xaml": "9.0.0-rc.2.24503.2"
-        }
-      },
-      "Microsoft.Maui.Controls.Compatibility/8.0.82": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration": "9.0.0-rc.2.24473.5",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.0-rc.2.24473.5",
-          "Microsoft.Maui.Controls.Core": "9.0.0-rc.2.24503.2",
-          "Microsoft.Maui.Controls.Xaml": "9.0.0-rc.2.24503.2"
-        },
-        "runtime": {
-          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Compatibility.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "8.0.8224.42604"
-          }
-        }
-      },
-      "Microsoft.Maui.Controls.Core/9.0.0-rc.2.24503.2": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration": "9.0.0-rc.2.24473.5",
-          "Microsoft.Extensions.DependencyInjection": "9.0.0-rc.2.24473.5",
-          "Microsoft.Extensions.Logging": "9.0.0-rc.2.24473.5",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.0-rc.2.24473.5",
-          "Microsoft.Maui.Core": "9.0.0-rc.2.24503.2"
-        },
-        "runtime": {
-          "lib/netstandard2.1/Microsoft.Maui.Controls.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "9.0.24.50302"
-          }
-        },
-        "resources": {
-          "lib/netstandard2.1/ar/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "ar"
-          },
-          "lib/netstandard2.1/ca/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "ca"
-          },
-          "lib/netstandard2.1/cs/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/netstandard2.1/da/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "da"
-          },
-          "lib/netstandard2.1/de/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "de"
-          },
-          "lib/netstandard2.1/el/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "el"
-          },
-          "lib/netstandard2.1/es/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "es"
-          },
-          "lib/netstandard2.1/fi/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "fi"
-          },
-          "lib/netstandard2.1/fr/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/netstandard2.1/he/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "he"
-          },
-          "lib/netstandard2.1/hi/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "hi"
-          },
-          "lib/netstandard2.1/hr/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "hr"
-          },
-          "lib/netstandard2.1/hu/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "hu"
-          },
-          "lib/netstandard2.1/id/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "id"
-          },
-          "lib/netstandard2.1/it/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "it"
-          },
-          "lib/netstandard2.1/ja/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/netstandard2.1/ko/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/netstandard2.1/ms/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "ms"
-          },
-          "lib/netstandard2.1/nb/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "nb"
-          },
-          "lib/netstandard2.1/nl/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "nl"
-          },
-          "lib/netstandard2.1/pl/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/netstandard2.1/pt-BR/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/netstandard2.1/pt/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "pt"
-          },
-          "lib/netstandard2.1/ro/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "ro"
-          },
-          "lib/netstandard2.1/ru/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/netstandard2.1/sk/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "sk"
-          },
-          "lib/netstandard2.1/sv/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "sv"
-          },
-          "lib/netstandard2.1/th/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "th"
-          },
-          "lib/netstandard2.1/tr/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/netstandard2.1/uk/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "uk"
-          },
-          "lib/netstandard2.1/vi/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "vi"
-          },
-          "lib/netstandard2.1/zh-HK/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "zh-HK"
-          },
-          "lib/netstandard2.1/zh-Hans/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/netstandard2.1/zh-Hant/Microsoft.Maui.Controls.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
-      "Microsoft.Maui.Controls.Xaml/9.0.0-rc.2.24503.2": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration": "9.0.0-rc.2.24473.5",
-          "Microsoft.Maui.Controls.Core": "9.0.0-rc.2.24503.2",
-          "Microsoft.Maui.Core": "9.0.0-rc.2.24503.2"
-        },
-        "runtime": {
-          "lib/netstandard2.1/Microsoft.Maui.Controls.Xaml.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "9.0.24.50302"
-          }
-        }
-      },
-      "Microsoft.Maui.Core/9.0.0-rc.2.24503.2": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration": "9.0.0-rc.2.24473.5",
-          "Microsoft.Extensions.DependencyInjection": "9.0.0-rc.2.24473.5",
-          "Microsoft.Extensions.Logging": "9.0.0-rc.2.24473.5",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.0-rc.2.24473.5",
-          "Microsoft.Maui.Essentials": "9.0.0-rc.2.24503.2",
-          "Microsoft.Maui.Graphics": "9.0.0-rc.2.24503.2",
-          "System.Numerics.Vectors": "4.5.0",
-          "System.Text.Json": "9.0.0-rc.2.24473.5"
-        },
-        "runtime": {
-          "lib/netstandard2.1/Microsoft.Maui.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "9.0.24.50302"
-          }
-        }
-      },
-      "Microsoft.Maui.Essentials/9.0.0-rc.2.24503.2": {
-        "dependencies": {
-          "Microsoft.Maui.Graphics": "9.0.0-rc.2.24503.2",
-          "System.Numerics.Vectors": "4.5.0"
-        },
-        "runtime": {
-          "lib/netstandard2.1/Microsoft.Maui.Essentials.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "9.0.24.50302"
-          }
-        }
-      },
-      "Microsoft.Maui.Graphics/9.0.0-rc.2.24503.2": {
-        "dependencies": {
-          "System.Numerics.Vectors": "4.5.0"
-        },
-        "runtime": {
-          "lib/netstandard2.1/Microsoft.Maui.Graphics.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "9.0.24.50302"
-          }
-        }
-      },
-      "Microsoft.Maui.Resizetizer/9.0.0-rc.2.24503.2": {},
       "Microsoft.NET.Test.Sdk/17.11.1": {
         "dependencies": {
           "Microsoft.CodeCoverage": "17.11.1",
@@ -890,24 +587,8 @@
           }
         }
       },
-      "System.Diagnostics.DiagnosticSource/9.0.0-rc.2.24473.5": {
-        "runtime": {
-          "lib/net8.0/System.Diagnostics.DiagnosticSource.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.47305"
-          }
-        }
-      },
+      "System.Diagnostics.DiagnosticSource/5.0.0": {},
       "System.Diagnostics.EventLog/6.0.0": {},
-      "System.IO.Pipelines/9.0.0-rc.2.24473.5": {
-        "runtime": {
-          "lib/net8.0/System.IO.Pipelines.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.47305"
-          }
-        }
-      },
-      "System.Numerics.Vectors/4.5.0": {},
       "System.Reactive/6.0.1": {
         "runtime": {
           "lib/net6.0-windows10.0.19041/System.Reactive.dll": {
@@ -916,35 +597,20 @@
           }
         }
       },
-      "System.Reflection.Metadata/1.6.0": {},
-      "System.Text.Encodings.Web/9.0.0-rc.2.24473.5": {
-        "runtime": {
-          "lib/net8.0/System.Text.Encodings.Web.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.47305"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll": {
-            "rid": "browser",
-            "assetType": "runtime",
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.47305"
-          }
-        }
-      },
-      "System.Text.Json/9.0.0-rc.2.24473.5": {
+      "System.Reactive.Linq/6.0.1": {
         "dependencies": {
-          "System.IO.Pipelines": "9.0.0-rc.2.24473.5",
-          "System.Text.Encodings.Web": "9.0.0-rc.2.24473.5"
+          "System.Reactive": "6.0.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "runtime": {
-          "lib/net8.0/System.Text.Json.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.47305"
+          "lib/netstandard2.0/System.Reactive.Linq.dll": {
+            "assemblyVersion": "3.0.6000.0",
+            "fileVersion": "3.0.6000.0"
           }
         }
       },
+      "System.Reflection.Metadata/1.6.0": {},
+      "System.Threading.Tasks.Extensions/4.5.4": {},
       "GeneralUtilities/1.0.0": {
         "runtime": {
           "GeneralUtilities.dll": {
@@ -956,7 +622,8 @@
       "gx000data/1.0.0": {
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "runtime": {
           "gx000data.dll": {
@@ -965,123 +632,15 @@
           }
         }
       },
-      "gx000server/1.0.0": {
+      "gx000serverSimComm/1.0.0": {
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Microsoft.Extensions.Logging.Debug": "8.0.0",
-          "Microsoft.Maui.Controls": "9.0.0-rc.2.24503.2",
-          "Microsoft.Maui.Controls.Compatibility": "8.0.82",
-          "System.Reactive": "6.0.1",
-          "gx000data": "1.0.0"
+          "System.Reactive": "6.0.1"
         },
         "runtime": {
-          "gx000server.dll": {
+          "gx000serverSimComm.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Microsoft.Graphics.Canvas.Interop/1.2.0.0": {
-        "runtime": {
-          "Microsoft.Graphics.Canvas.Interop.dll": {
-            "assemblyVersion": "1.2.0.0",
-            "fileVersion": "1.2.0.0"
-          }
-        }
-      },
-      "Microsoft.InteractiveExperiences.Projection/10.0.0.0": {
-        "runtime": {
-          "Microsoft.InteractiveExperiences.Projection.dll": {
-            "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.26105.1002"
-          }
-        }
-      },
-      "Microsoft.Windows.ApplicationModel.DynamicDependency.Projection/1.5.0.0": {
-        "runtime": {
-          "Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {
-            "assemblyVersion": "1.5.0.0",
-            "fileVersion": "1.5.0.0"
-          }
-        }
-      },
-      "Microsoft.Windows.ApplicationModel.Resources.Projection/1.5.0.0": {
-        "runtime": {
-          "Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {
-            "assemblyVersion": "1.5.0.0",
-            "fileVersion": "1.5.0.0"
-          }
-        }
-      },
-      "Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection/1.5.0.0": {
-        "runtime": {
-          "Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {
-            "assemblyVersion": "1.5.0.0",
-            "fileVersion": "1.5.0.0"
-          }
-        }
-      },
-      "Microsoft.Windows.AppLifecycle.Projection/1.5.0.0": {
-        "runtime": {
-          "Microsoft.Windows.AppLifecycle.Projection.dll": {
-            "assemblyVersion": "1.5.0.0",
-            "fileVersion": "1.5.0.0"
-          }
-        }
-      },
-      "Microsoft.Windows.AppNotifications.Builder.Projection/1.5.0.0": {
-        "runtime": {
-          "Microsoft.Windows.AppNotifications.Builder.Projection.dll": {
-            "assemblyVersion": "1.5.0.0",
-            "fileVersion": "1.5.0.0"
-          }
-        }
-      },
-      "Microsoft.Windows.AppNotifications.Projection/1.5.0.0": {
-        "runtime": {
-          "Microsoft.Windows.AppNotifications.Projection.dll": {
-            "assemblyVersion": "1.5.0.0",
-            "fileVersion": "1.5.0.0"
-          }
-        }
-      },
-      "Microsoft.Windows.Management.Deployment.Projection/1.5.0.0": {
-        "runtime": {
-          "Microsoft.Windows.Management.Deployment.Projection.dll": {
-            "assemblyVersion": "1.5.0.0",
-            "fileVersion": "1.5.0.0"
-          }
-        }
-      },
-      "Microsoft.Windows.PushNotifications.Projection/1.5.0.0": {
-        "runtime": {
-          "Microsoft.Windows.PushNotifications.Projection.dll": {
-            "assemblyVersion": "1.5.0.0",
-            "fileVersion": "1.5.0.0"
-          }
-        }
-      },
-      "Microsoft.Windows.System.Projection/1.5.0.0": {
-        "runtime": {
-          "Microsoft.Windows.System.Projection.dll": {
-            "assemblyVersion": "1.5.0.0",
-            "fileVersion": "1.5.0.0"
-          }
-        }
-      },
-      "Microsoft.Windows.Widgets.Projection/1.0.0.0": {
-        "runtime": {
-          "Microsoft.Windows.Widgets.Projection.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Microsoft.WinUI/3.0.0.0": {
-        "runtime": {
-          "Microsoft.WinUI.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.2406"
           }
         }
       }
@@ -1093,7 +652,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.19041.44": {
+    "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.19041.53": {
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
@@ -1125,132 +684,6 @@
       "sha512": "sha512-nPJqrcA5iX+Y0kqoT3a+pD/8lrW/V7ayqnEJQsTonSoPz59J8bmoQhcSN4G8+UJ64Hkuf0zuxnfuj2lkHOq4cA==",
       "path": "microsoft.codecoverage/17.11.1",
       "hashPath": "microsoft.codecoverage.17.11.1.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Configuration/9.0.0-rc.2.24473.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0hsJlhsf0e9Q4449obn6Mmk8jZiC8d7q06U8stgnDkTvWVzTcukcRwBwSDWY7lgxqAVgqT2uumuwWABDR6j8PA==",
-      "path": "microsoft.extensions.configuration/9.0.0-rc.2.24473.5",
-      "hashPath": "microsoft.extensions.configuration.9.0.0-rc.2.24473.5.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Configuration.Abstractions/9.0.0-rc.2.24473.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-rZdBuOxD0nTZVbPMaDhXEND+bkGQ2GcsVpte8JBYss0o+c0xyW8EIwnB7KUha2pzDd//n+y3ABVz2Lh1VxyKgQ==",
-      "path": "microsoft.extensions.configuration.abstractions/9.0.0-rc.2.24473.5",
-      "hashPath": "microsoft.extensions.configuration.abstractions.9.0.0-rc.2.24473.5.nupkg.sha512"
-    },
-    "Microsoft.Extensions.DependencyInjection/9.0.0-rc.2.24473.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FHb7uxiX/08FBBtwat7fiBdQltxst1Farux6Ifn1dfke+D8h1rcDj1ZbKzNB9SvLh1XmEXNYmoWGkTjt1mVzXg==",
-      "path": "microsoft.extensions.dependencyinjection/9.0.0-rc.2.24473.5",
-      "hashPath": "microsoft.extensions.dependencyinjection.9.0.0-rc.2.24473.5.nupkg.sha512"
-    },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.0-rc.2.24473.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-T8oVF5Kz+J5IVagQAqcFFUrc/JrjaSvpACSm+t6cNolBX1S41PZVe3JLa3bxKnz0GTkUfSPPIkaekLmpAmHu3Q==",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.0-rc.2.24473.5",
-      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.9.0.0-rc.2.24473.5.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Logging/9.0.0-rc.2.24473.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FZe8VCCAkkDOyek1ZlMmakDJNkA+cojDLpTtl5Pm4H5MdWS6WWGSfoDi++V1XiDUympTJ/S0iItSxfFf/M5e6w==",
-      "path": "microsoft.extensions.logging/9.0.0-rc.2.24473.5",
-      "hashPath": "microsoft.extensions.logging.9.0.0-rc.2.24473.5.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Logging.Abstractions/9.0.0-rc.2.24473.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-GFglWb+13UaNAoIN1Pxvlm+/iBblBw0LHTu3dYPVCNTD2cQHM2SORFpb/s+QqKs0iT0SAwC27CnSsCKh3eGH6A==",
-      "path": "microsoft.extensions.logging.abstractions/9.0.0-rc.2.24473.5",
-      "hashPath": "microsoft.extensions.logging.abstractions.9.0.0-rc.2.24473.5.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Logging.Debug/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-dt0x21qBdudHLW/bjMJpkixv858RRr8eSomgVbU8qljOyfrfDGi1JQvpF9w8S7ziRPtRKisuWaOwFxJM82GxeA==",
-      "path": "microsoft.extensions.logging.debug/8.0.0",
-      "hashPath": "microsoft.extensions.logging.debug.8.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Options/9.0.0-rc.2.24473.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-yv1/d9PHKB6W2KnyjgASAKU9siFtHQzFKcMLaGtEn95c2/j8ATKZkt+d4MbzxRY7fYtMyK7SOSMAFr3LybyWiw==",
-      "path": "microsoft.extensions.options/9.0.0-rc.2.24473.5",
-      "hashPath": "microsoft.extensions.options.9.0.0-rc.2.24473.5.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Primitives/9.0.0-rc.2.24473.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-gNj30XW3pWU6CqitHqR4OBUzqauunjzHe3hJBeueE1OcXBIs9C1XpnmyNVTvBUC+ENgxU06N8hnXHNu0rveIBA==",
-      "path": "microsoft.extensions.primitives/9.0.0-rc.2.24473.5",
-      "hashPath": "microsoft.extensions.primitives.9.0.0-rc.2.24473.5.nupkg.sha512"
-    },
-    "Microsoft.Maui.Controls/9.0.0-rc.2.24503.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-U9bvhVqs5gXolmXp8IsHnz77gFr78sf8vWKikFk7gsuX+jFisRcrx2Zy+owWZk3SrsGjpwI0pdGZNmVo5frZBg==",
-      "path": "microsoft.maui.controls/9.0.0-rc.2.24503.2",
-      "hashPath": "microsoft.maui.controls.9.0.0-rc.2.24503.2.nupkg.sha512"
-    },
-    "Microsoft.Maui.Controls.Build.Tasks/9.0.0-rc.2.24503.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-XfJXHblrENAka7Pxxt/ta+dOmiN/ArVHGFSriqkli1AjqBdPMgpY2aw3ZgsY0M6mOy4ufbiYvZ30+Bf+iYRHlQ==",
-      "path": "microsoft.maui.controls.build.tasks/9.0.0-rc.2.24503.2",
-      "hashPath": "microsoft.maui.controls.build.tasks.9.0.0-rc.2.24503.2.nupkg.sha512"
-    },
-    "Microsoft.Maui.Controls.Compatibility/8.0.82": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-PwsRrH9PuL3UAITU7l6cgKIqzPekios1XlnBLJW8ZemHUnFnZDU4eNpNf9OBmTiZm2pKVT8Ls3YZQ1gZKt9sKA==",
-      "path": "microsoft.maui.controls.compatibility/8.0.82",
-      "hashPath": "microsoft.maui.controls.compatibility.8.0.82.nupkg.sha512"
-    },
-    "Microsoft.Maui.Controls.Core/9.0.0-rc.2.24503.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-hfNmGJFPHdNc3waYCn5oDNVSnrRZNV6eZ8xu9ApNP7FgdXScVI+K5Q/+QWdCo9otb7uT6lLNF8rBaQBSxGkdxA==",
-      "path": "microsoft.maui.controls.core/9.0.0-rc.2.24503.2",
-      "hashPath": "microsoft.maui.controls.core.9.0.0-rc.2.24503.2.nupkg.sha512"
-    },
-    "Microsoft.Maui.Controls.Xaml/9.0.0-rc.2.24503.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-pUTRqM0bY6K2LnX72OcACD3h8aobRrNWPG5UNllZEisMwsI1Tds2C9TFp9O3G40ddFtfXInkgD1TIsZVpng23w==",
-      "path": "microsoft.maui.controls.xaml/9.0.0-rc.2.24503.2",
-      "hashPath": "microsoft.maui.controls.xaml.9.0.0-rc.2.24503.2.nupkg.sha512"
-    },
-    "Microsoft.Maui.Core/9.0.0-rc.2.24503.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-KfrgbFcbU0wwj6fi8nzPTlegWnxGWew8LwvhGhUSwmBP5BGcWLmqE5Kj1K6W0IiONPk1Huvu0uk5LxWPiXnu8A==",
-      "path": "microsoft.maui.core/9.0.0-rc.2.24503.2",
-      "hashPath": "microsoft.maui.core.9.0.0-rc.2.24503.2.nupkg.sha512"
-    },
-    "Microsoft.Maui.Essentials/9.0.0-rc.2.24503.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-zbhRKTNiMLTlGfztvj8chLEIgVDXRDiAKYHi7OpmC4ysySH+u7hJ4Mv6MX4rheOqnnwB6Zerkn3GYUmL0K2Egw==",
-      "path": "microsoft.maui.essentials/9.0.0-rc.2.24503.2",
-      "hashPath": "microsoft.maui.essentials.9.0.0-rc.2.24503.2.nupkg.sha512"
-    },
-    "Microsoft.Maui.Graphics/9.0.0-rc.2.24503.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-DsuTX9M/T0nVmr3hg8jsGznRZfF44e5yrgLEr6K0PsGsmh7rvhkAkIWjg0Gor7O/ujT3INHz5r5fst4OP6NhKg==",
-      "path": "microsoft.maui.graphics/9.0.0-rc.2.24503.2",
-      "hashPath": "microsoft.maui.graphics.9.0.0-rc.2.24503.2.nupkg.sha512"
-    },
-    "Microsoft.Maui.Resizetizer/9.0.0-rc.2.24503.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-wG1ULeNTA+0ZY61k1Vgrbe4Gl45olta2Cr15TI91Y2Qkz4/XXCYNu1zWeUIycavOlasaS42MCmdxCKLRImXM6g==",
-      "path": "microsoft.maui.resizetizer/9.0.0-rc.2.24503.2",
-      "hashPath": "microsoft.maui.resizetizer.9.0.0-rc.2.24503.2.nupkg.sha512"
     },
     "Microsoft.NET.Test.Sdk/17.11.1": {
       "type": "package",
@@ -1350,12 +783,12 @@
       "path": "stateless/5.16.0",
       "hashPath": "stateless.5.16.0.nupkg.sha512"
     },
-    "System.Diagnostics.DiagnosticSource/9.0.0-rc.2.24473.5": {
+    "System.Diagnostics.DiagnosticSource/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1trPm7zM4c15wMJVMV67XbYhA96wIIuBsEunorYRSrgKbFBZeG6gEGwiKy53SFJBpzq6oy+2kYckPaBzsK5p8w==",
-      "path": "system.diagnostics.diagnosticsource/9.0.0-rc.2.24473.5",
-      "hashPath": "system.diagnostics.diagnosticsource.9.0.0-rc.2.24473.5.nupkg.sha512"
+      "sha512": "sha512-tCQTzPsGZh/A9LhhA6zrqCRV4hOHsK90/G7q3Khxmn6tnB1PuNU0cRaKANP2AWcF9bn0zsuOoZOSrHuJk6oNBA==",
+      "path": "system.diagnostics.diagnosticsource/5.0.0",
+      "hashPath": "system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
     },
     "System.Diagnostics.EventLog/6.0.0": {
       "type": "package",
@@ -1364,26 +797,19 @@
       "path": "system.diagnostics.eventlog/6.0.0",
       "hashPath": "system.diagnostics.eventlog.6.0.0.nupkg.sha512"
     },
-    "System.IO.Pipelines/9.0.0-rc.2.24473.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-imrG8NvYH2f4Pdiu9xDUh2X7yoJgl6ginhAzuozH3HKERVf8kOOG09QrAnmgMNHLiWKsTztmE0CyzqfQs/X1IA==",
-      "path": "system.io.pipelines/9.0.0-rc.2.24473.5",
-      "hashPath": "system.io.pipelines.9.0.0-rc.2.24473.5.nupkg.sha512"
-    },
-    "System.Numerics.Vectors/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
-      "path": "system.numerics.vectors/4.5.0",
-      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
-    },
     "System.Reactive/6.0.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-rHaWtKDwCi9qJ3ObKo8LHPMuuwv33YbmQi7TcUK1C264V3MFnOr5Im7QgCTdLniztP3GJyeiSg5x8NqYJFqRmg==",
       "path": "system.reactive/6.0.1",
       "hashPath": "system.reactive.6.0.1.nupkg.sha512"
+    },
+    "System.Reactive.Linq/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XC+ZxI74RhP10po29httLW82gjtVQYkLaGM36FIpjd0+lroTerWViadxSXjcWiFPslsdvqNTPrIT+oIA3i4Rfw==",
+      "path": "system.reactive.linq/6.0.1",
+      "hashPath": "system.reactive.linq.6.0.1.nupkg.sha512"
     },
     "System.Reflection.Metadata/1.6.0": {
       "type": "package",
@@ -1392,19 +818,12 @@
       "path": "system.reflection.metadata/1.6.0",
       "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
     },
-    "System.Text.Encodings.Web/9.0.0-rc.2.24473.5": {
+    "System.Threading.Tasks.Extensions/4.5.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nBIVPcHg6sqqiV7pWxDxldAaiHCSrAcUU84WfDkjZrrvowv8VzU55K1k7qPw76k2xMnxbfCYZv7gYX7QPuE0fw==",
-      "path": "system.text.encodings.web/9.0.0-rc.2.24473.5",
-      "hashPath": "system.text.encodings.web.9.0.0-rc.2.24473.5.nupkg.sha512"
-    },
-    "System.Text.Json/9.0.0-rc.2.24473.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-IsQCD+zBcFhteX7fUrS4cU/GvfLPy8F4oLtC9VBcF1U1qu1gZB/zlAxW8G0kqmAiXI84/gowZtcX1MjLk2QWoQ==",
-      "path": "system.text.json/9.0.0-rc.2.24473.5",
-      "hashPath": "system.text.json.9.0.0-rc.2.24473.5.nupkg.sha512"
+      "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
     "GeneralUtilities/1.0.0": {
       "type": "project",
@@ -1416,73 +835,8 @@
       "serviceable": false,
       "sha512": ""
     },
-    "gx000server/1.0.0": {
+    "gx000serverSimComm/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Graphics.Canvas.Interop/1.2.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.InteractiveExperiences.Projection/10.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Windows.ApplicationModel.DynamicDependency.Projection/1.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Windows.ApplicationModel.Resources.Projection/1.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection/1.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Windows.AppLifecycle.Projection/1.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Windows.AppNotifications.Builder.Projection/1.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Windows.AppNotifications.Projection/1.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Windows.Management.Deployment.Projection/1.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Windows.PushNotifications.Projection/1.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Windows.System.Projection/1.5.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Windows.Widgets.Projection/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.WinUI/3.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

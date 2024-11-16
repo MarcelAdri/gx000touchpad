@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RKwmDFFps6k=",
+  "dgSpecHash": "XM/rSSrt49c=",
   "success": true,
   "projectFilePath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000touchpadUnitTests\\gx000touchpadUnitTests.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\microsoft.applicationinsights\\2.22.0\\microsoft.applicationinsights.2.22.0.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\microsoft.codecoverage\\17.11.1\\microsoft.codecoverage.17.11.1.nupkg.sha512",
+    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.11\\microsoft.net.illink.tasks.8.0.11.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\microsoft.net.test.sdk\\17.11.1\\microsoft.net.test.sdk.17.11.1.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\microsoft.testing.extensions.telemetry\\1.4.1\\microsoft.testing.extensions.telemetry.1.4.1.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\microsoft.testing.extensions.trxreport.abstractions\\1.4.1\\microsoft.testing.extensions.trxreport.abstractions.1.4.1.nupkg.sha512",
@@ -24,10 +25,12 @@
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\stateless\\5.16.0\\stateless.5.16.0.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
-    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
-    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.reactive.linq\\5.0.0\\system.reactive.linq.5.0.0.nupkg.sha512",
+    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.reactive\\6.0.1\\system.reactive.6.0.1.nupkg.sha512",
+    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.reactive.linq\\6.0.1\\system.reactive.linq.6.0.1.nupkg.sha512",
     "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
-    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\AchttienbvMarcelAdri\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.53\\microsoft.windows.sdk.net.ref.10.0.19041.53.nupkg.sha512"
   ],
   "logs": []
 }

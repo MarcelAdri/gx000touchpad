@@ -12,9 +12,7 @@
       }
     ],
     "configProperties": {
-      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,
-      "Microsoft.Maui.RuntimeFeature.IsIVisualAssemblyScanningEnabled": false,
-      "Microsoft.Maui.RuntimeFeature.Microsoft.Maui.RuntimeFeature.AreBindingInterceptorsSupported": true
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false
     }
   }
 }

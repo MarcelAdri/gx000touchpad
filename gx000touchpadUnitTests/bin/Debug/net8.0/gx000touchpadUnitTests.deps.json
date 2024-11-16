@@ -15,8 +15,8 @@
           "NUnit.Analyzers": "4.3.0",
           "NUnit3TestAdapter": "5.0.0-beta.3",
           "Stateless": "5.16.0",
-          "System.Reactive": "5.0.0",
-          "System.Reactive.Linq": "5.0.0",
+          "System.Reactive": "6.0.1",
+          "System.Reactive.Linq": "6.0.1",
           "coverlet.collector": "6.0.2",
           "gx000data": "1.0.0"
         },
@@ -597,17 +597,17 @@
           }
         }
       },
-      "System.Reactive/5.0.0": {
+      "System.Reactive/6.0.1": {
         "runtime": {
-          "lib/net5.0/System.Reactive.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.1"
+          "lib/net6.0/System.Reactive.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.1.7420"
           }
         }
       },
-      "System.Reactive.Linq/5.0.0": {
+      "System.Reactive.Linq/6.0.1": {
         "dependencies": {
-          "System.Reactive": "5.0.0",
+          "System.Reactive": "6.0.1",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "runtime": {
@@ -630,10 +630,23 @@
       "gx000data/1.0.0": {
         "dependencies": {
           "GeneralUtilities": "1.0.0",
-          "Stateless": "5.16.0"
+          "Stateless": "5.16.0",
+          "gx000serverSimComm": "1.0.0"
         },
         "runtime": {
           "gx000data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "gx000serverSimComm/1.0.0": {
+        "dependencies": {
+          "GeneralUtilities": "1.0.0",
+          "System.Reactive": "6.0.1"
+        },
+        "runtime": {
+          "gx000serverSimComm.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -787,19 +800,19 @@
       "path": "system.diagnostics.eventlog/6.0.0",
       "hashPath": "system.diagnostics.eventlog.6.0.0.nupkg.sha512"
     },
-    "System.Reactive/5.0.0": {
+    "System.Reactive/6.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
-      "path": "system.reactive/5.0.0",
-      "hashPath": "system.reactive.5.0.0.nupkg.sha512"
+      "sha512": "sha512-rHaWtKDwCi9qJ3ObKo8LHPMuuwv33YbmQi7TcUK1C264V3MFnOr5Im7QgCTdLniztP3GJyeiSg5x8NqYJFqRmg==",
+      "path": "system.reactive/6.0.1",
+      "hashPath": "system.reactive.6.0.1.nupkg.sha512"
     },
-    "System.Reactive.Linq/5.0.0": {
+    "System.Reactive.Linq/6.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IB4/qlV4T1WhZvM11RVoFUSZXPow9VWVeQ1uDkSKgz6bAO+gCf65H/vjrYlwyXmojSSxvfHndF9qdH43P/IuAw==",
-      "path": "system.reactive.linq/5.0.0",
-      "hashPath": "system.reactive.linq.5.0.0.nupkg.sha512"
+      "sha512": "sha512-XC+ZxI74RhP10po29httLW82gjtVQYkLaGM36FIpjd0+lroTerWViadxSXjcWiFPslsdvqNTPrIT+oIA3i4Rfw==",
+      "path": "system.reactive.linq/6.0.1",
+      "hashPath": "system.reactive.linq.6.0.1.nupkg.sha512"
     },
     "System.Reflection.Metadata/1.6.0": {
       "type": "package",
@@ -821,6 +834,11 @@
       "sha512": ""
     },
     "gx000data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "gx000serverSimComm/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

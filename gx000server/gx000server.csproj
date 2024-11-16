@@ -39,6 +39,7 @@
 
         <WindowsAppSdkDeploymentManagerInitialize>false</WindowsAppSdkDeploymentManagerInitialize>
         <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+        <LangVersion>latestmajor</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
