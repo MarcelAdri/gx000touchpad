@@ -1,0 +1,16 @@
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\bin\Debug\net8.0\gx000serverSimComm.deps.json
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\bin\Debug\net8.0\gx000serverSimComm.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\bin\Debug\net8.0\gx000serverSimComm.pdb
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\bin\Debug\net8.0\GeneralUtilities.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\bin\Debug\net8.0\GeneralUtilities.pdb
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\obj\Debug\net8.0\gx000serverSimComm.csproj.AssemblyReference.cache
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\obj\Debug\net8.0\gx000serverSimComm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\obj\Debug\net8.0\gx000serverSimComm.AssemblyInfoInputs.cache
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\obj\Debug\net8.0\gx000serverSimComm.AssemblyInfo.cs
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\obj\Debug\net8.0\gx000serverSimComm.csproj.CoreCompileInputs.cache
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\obj\Debug\net8.0\gx000serverSimComm.sourcelink.json
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\obj\Debug\net8.0\gx000ser.CDF447DE.Up2Date
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\obj\Debug\net8.0\gx000serverSimComm.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\obj\Debug\net8.0\refint\gx000serverSimComm.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\obj\Debug\net8.0\gx000serverSimComm.pdb
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000serverSimComm\obj\Debug\net8.0\ref\gx000serverSimComm.dll

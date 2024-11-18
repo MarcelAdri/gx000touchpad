@@ -6,7 +6,7 @@ namespace gx000server;
 
 public class ViewModel
 {
-    public GenerateFLightSimContent.GenerateFlightSimContent SimContent { get; } = new();
+    public GenerateFlightSimContent SimContent { get; } = new();
     public ProcessSimData DataProcess { get; }
 
     public ViewModel()

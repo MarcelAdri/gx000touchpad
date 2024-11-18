@@ -14,14 +14,14 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
     /// Holds an instance of the GenerateFlightSimContent class, which generates
     /// variable content for simulation/testing purposes.
     /// </summary>
-    private readonly GenerateFLightSimContent.GenerateFlightSimContent _content;
+    private readonly GenerateFlightSimContent _content;
 
     /// <summary>
     /// Represents an active subscription to observable events generated from property changes
     /// in the GenerateFlightSimContent instance.
     /// The subscription listens for PropertyChanged events and processes them accordingly.
     /// </summary>
-    private readonly IDisposable _subscription;
+    protected IDisposable _subscription;
 
     /// <summary>
     /// Holds the name of a variable being processed for simulation purposes.
@@ -39,6 +39,8 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
     /// Holds the data of the currently active variable within the simulation.
     /// </summary>
     private Variable _currentVariable;
+    
+    public bool IsDisposed { get; private set; }
 
     /// <summary>
     /// Event that is triggered when a property value changes.
@@ -61,7 +63,7 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
     /// </example>
     /// <seealso cref="GenerateFLightSimContent.GenerateFlightSimContent"/>
     /// <seealso cref="Variable"/>
-    public ProcessSimData(GenerateFLightSimContent.GenerateFlightSimContent content)
+    public ProcessSimData(GenerateFlightSimContent content)
     {
         _content = content;
         
@@ -80,7 +82,7 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
     public Variable CurrentVariable
     {
         get => _currentVariable;
-        set
+        protected set
         {
             _currentVariable = value;
             OnPropertyChanged();
@@ -96,7 +98,7 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
     public string VariableName
     {
         get => _variableName;
-        private set
+        protected set
         {
             if (_variableName == value) return;
             _variableName = value;
@@ -116,7 +118,7 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
     public string DataType
     {
         get => _dataType;
-        private set
+        protected set
         {
             if (_dataType == value) return;
             _dataType = value;
@@ -132,7 +134,7 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
     /// The name of the property that changed. This is optional and can be supplied automatically
     /// by the CallerMemberName attribute.
     /// </param>
-    protected virtual void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string? propertyName = null)
+    private void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string? propertyName = null)
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
@@ -157,12 +159,15 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
     /// </summary>
     /// <param name="disposing">Indicates whether the method call comes from a Dispose method (its value is true)
     /// or from a finalizer (its value is false).</param>
-    protected virtual void Dispose(bool disposing)
+    private void Dispose(bool disposing)
     {
+        if (IsDisposed) return;
         if (disposing)
         {
             _subscription.Dispose();
         }
+        
+        IsDisposed = true;
     }
 
     /// <summary>

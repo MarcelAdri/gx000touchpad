@@ -172,3 +172,4 @@ C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\obj\Debug\net8.0\gx000touchpadUnitTests.pdb
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\obj\Debug\net8.0\gx000touchpadUnitTests.genruntimeconfig.cache
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\obj\Debug\net8.0\ref\gx000touchpadUnitTests.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\gx000touchpadUnitTests.exe

@@ -4,9 +4,7 @@ using GeneralUtilities;
 
 namespace gx000serverSimComm;
 
-public class GenerateFLightSimContent
-{
-    /// <summary>
+/// <summary>
 /// Generates variable content in a continuous loop for testing purposes.
 /// TODO: will be replaced by getting content from FlightSim.
 /// </summary>
@@ -105,5 +103,4 @@ public class GenerateFlightSimContent : INotifyPropertyChanged
     }
 
 
-}
 }
