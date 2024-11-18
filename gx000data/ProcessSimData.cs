@@ -183,45 +183,21 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
         if (propertyInfo == null)
             throw new InvalidOperationException($"{VariableName} is not a valid property name");
 
-        GetType(VariableName);
+        SetDataType(VariableName);
         
         var contentValue = propertyInfo.GetValue(_content) as string
             ?? throw new InvalidOperationException($"{VariableName} does not contain a string value.");
 
-        string numberContentValue;
-        
         switch (DataType)
         {
             case "StringType":
-                CurrentVariable = new StringVariable(
-                    VariableName,
-                    contentValue);
+                ProcessStringVariable(contentValue);
                 break;
             case "IntType":
-                numberContentValue = NumberServices.UnformatNumber(contentValue);
-                if (int.TryParse(numberContentValue, out var intValue))
-                {
-                    CurrentVariable = new Int32Variable(
-                        VariableName,
-                        intValue);
-                }
-                else
-                {
-                    throw new InvalidOperationException($"Cannot convert {numberContentValue} to {typeof(int)}");
-                }
+                ProcessIntVariable(contentValue);
                 break;
             case "LongType":
-                numberContentValue = NumberServices.UnformatNumber(contentValue);
-                if (long.TryParse(numberContentValue, out var longValue))
-                {
-                    CurrentVariable = new Int64Variable(
-                        VariableName,
-                        longValue);
-                }
-                else
-                {
-                    throw new InvalidOperationException($"Cannot convert {numberContentValue} to {typeof(long)}");
-                }
+                ProcessLongVariable(contentValue);
                 break;
         }
     }
@@ -231,7 +207,7 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
     /// </summary>
     /// <param name="variableName">The name of the variable whose data type is to be determined.</param>
     /// <exception cref="Exception">Thrown when the variable is not supported.</exception>
-    private void GetType(string variableName)
+    private void SetDataType(string variableName)
     {
         try
         {
@@ -240,6 +216,54 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
         catch (KeyNotFoundException e)
         {
             throw new Exception($"Variable {variableName} is not supported", e);
+        }
+    }
+
+    /// <summary>
+    /// Processes a string variable by creating a new instance of the StringVariable class with the given content value.
+    /// </summary>
+    /// <param name="contentValue">The string content value to be processed into a StringVariable.</param>
+    private void ProcessStringVariable(string contentValue)
+    {
+        CurrentVariable = new StringVariable(VariableName, contentValue);
+    }
+
+    /// <summary>
+    /// Processes an integer variable by converting the given content value from a string to an integer.
+    /// If the conversion is successful, updates the CurrentVariable property with an Int32Variable instance.
+    /// </summary>
+    /// <param name="contentValue">The string representation of the integer value to be processed.</param>
+    /// <exception cref="InvalidOperationException">Thrown if the content value cannot be converted to an integer.</exception>
+    private void ProcessIntVariable(string contentValue)
+    {
+        string numberContentValue = NumberServices.UnformatNumber(contentValue);
+        if (int.TryParse(numberContentValue, out var intValue))
+        {
+            CurrentVariable = new Int32Variable(VariableName, intValue);
+        }
+        else
+        {
+            throw new InvalidOperationException($"Cannot convert {numberContentValue} to {typeof(int)}");
+        }
+    }
+
+    /// <summary>
+    /// Processes a long-type variable from the given content value.
+    /// </summary>
+    /// <param name="contentValue">The string representation of the content value to be processed.</param>
+    /// <exception cref="InvalidOperationException">
+    /// Thrown when the provided contentValue cannot be converted to a long integer.
+    /// </exception>
+    private void ProcessLongVariable(string contentValue)
+    {
+        string numberContentValue = NumberServices.UnformatNumber(contentValue);
+        if (long.TryParse(numberContentValue, out var longValue))
+        {
+            CurrentVariable = new Int64Variable(VariableName, longValue);
+        }
+        else
+        {
+            throw new InvalidOperationException($"Cannot convert {numberContentValue} to {typeof(long)}");
         }
     }
 }
