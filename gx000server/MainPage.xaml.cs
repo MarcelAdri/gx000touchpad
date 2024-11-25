@@ -1,9 +1,11 @@
-﻿namespace gx000server;
+﻿using gx000serverViewModel;
+
+namespace gx000server;
 
 public partial class MainPage : ContentPage
 {
     private ViewModel _viewModel;
-
+    
     public MainPage()
     {
         InitializeComponent();

@@ -35,6 +35,8 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
     /// </summary>
     private string _dataType;
 
+    private string _trigger;
+
     /// <summary>
     /// Holds the data of the currently active variable within the simulation.
     /// </summary>
@@ -125,6 +127,16 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
             OnPropertyChanged();
         }
     }
+    public string Trigger
+    {
+        get => _trigger;
+        protected set
+        {
+            if (_trigger == value) return;
+            _trigger = value;
+            OnPropertyChanged();
+        }
+    }
 
    
     /// <summary>
@@ -200,6 +212,9 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
                 ProcessLongVariable(contentValue);
                 break;
         }
+        CurrentVariable.SetCurrentTrigger(Variable.Triggers.SimSendsUpdate);
+        Trigger = CurrentVariable.GetCurrentTrigger().ToString();
+
     }
 
     /// <summary>

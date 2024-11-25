@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gx000server", "gx000server\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gx000serverSimComm", "gx000serverSimComm\gx000serverSimComm.csproj", "{13C62ECA-DC90-4D8B-B6E0-AA5C977EEEC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gx000serverViewModel", "gx000serverViewModel\gx000serverViewModel.csproj", "{EBAE59EE-62C1-460F-A4F9-C0D4C113CD3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,5 +36,9 @@ Global
 		{13C62ECA-DC90-4D8B-B6E0-AA5C977EEEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13C62ECA-DC90-4D8B-B6E0-AA5C977EEEC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13C62ECA-DC90-4D8B-B6E0-AA5C977EEEC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBAE59EE-62C1-460F-A4F9-C0D4C113CD3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBAE59EE-62C1-460F-A4F9-C0D4C113CD3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBAE59EE-62C1-460F-A4F9-C0D4C113CD3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBAE59EE-62C1-460F-A4F9-C0D4C113CD3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

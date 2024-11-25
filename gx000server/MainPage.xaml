@@ -94,6 +94,16 @@
                         x:Name="CurrentVariablevalueLabel"
                         Text="{Binding DataProcess.CurrentVariable.Value, Converter={StaticResource ObjectToStringConverter}}" />
                 </HorizontalStackLayout>
+                
+                <HorizontalStackLayout
+                    HorizontalOptions="Center">
+                    <Label
+                        Text="Current Trigger: " />
+
+                    <Label
+                        x:Name="CurrentTriggerLabel"
+                        Text="{Binding DataProcess.Trigger}" />
+                </HorizontalStackLayout>
 
             </VerticalStackLayout>  
         </HorizontalStackLayout>

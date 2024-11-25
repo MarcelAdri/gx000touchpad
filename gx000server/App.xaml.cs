@@ -1,4 +1,6 @@
-﻿namespace gx000server;
+﻿using gx000serverViewModel;
+
+namespace gx000server;
 
 public partial class App : Application
 {

@@ -1,13 +1,14 @@
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_gx000touchpadUnitTests
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\CoverletSourceRootsMapping_gx000touchpadUnitTests
-C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\testhost.exe
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\testhost.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\testhost.exe
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\NUnit3.TestAdapter.pdb
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\nunit.engine.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\nunit.engine.api.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\nunit.engine.core.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\testcentric.engine.metadata.dll
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\NUnit3.TestAdapter.dll
+C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\gx000touchpadUnitTests.exe
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\gx000touchpadUnitTests.deps.json
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\gx000touchpadUnitTests.runtimeconfig.json
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\gx000touchpadUnitTests.dll
@@ -172,4 +173,3 @@ C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\obj\Debug\net8.0\gx000touchpadUnitTests.pdb
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\obj\Debug\net8.0\gx000touchpadUnitTests.genruntimeconfig.cache
 C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\obj\Debug\net8.0\ref\gx000touchpadUnitTests.dll
-C:\Users\AchttienbvMarcelAdri\RiderProjects\gx000touchpad\gx000touchpadUnitTests\bin\Debug\net8.0\gx000touchpadUnitTests.exe

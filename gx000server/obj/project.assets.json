@@ -2274,6 +2274,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-android34.0/android-arm": {
@@ -4548,6 +4562,20 @@
         },
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
+        }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
         }
       }
     },
@@ -6824,6 +6852,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-android34.0/android-x64": {
@@ -9098,6 +9140,20 @@
         },
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
+        }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
         }
       }
     },
@@ -11374,6 +11430,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-android34.0/iossimulator-x64": {
@@ -13648,6 +13718,20 @@
         },
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
+        }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
         }
       }
     },
@@ -15924,6 +16008,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-android34.0/win10-x64": {
@@ -18199,6 +18297,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-ios18.0": {
@@ -18687,6 +18799,20 @@
         },
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
+        }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
         }
       }
     },
@@ -19177,6 +19303,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-ios18.0/android-arm64": {
@@ -19665,6 +19805,20 @@
         },
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
+        }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
         }
       }
     },
@@ -20155,6 +20309,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-ios18.0/android-x86": {
@@ -20643,6 +20811,20 @@
         },
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
+        }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
         }
       }
     },
@@ -21133,6 +21315,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-ios18.0/maccatalyst-x64": {
@@ -21621,6 +21817,20 @@
         },
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
+        }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
         }
       }
     },
@@ -22111,6 +22321,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst18.0": {
@@ -22599,6 +22823,20 @@
         },
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
+        }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
         }
       }
     },
@@ -23089,6 +23327,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst18.0/android-arm64": {
@@ -23577,6 +23829,20 @@
         },
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
+        }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
         }
       }
     },
@@ -24067,6 +24333,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst18.0/android-x86": {
@@ -24555,6 +24835,20 @@
         },
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
+        }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
         }
       }
     },
@@ -25045,6 +25339,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst18.0/maccatalyst-x64": {
@@ -25534,6 +25842,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-maccatalyst18.0/win10-x64": {
@@ -26022,6 +26344,20 @@
         },
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
+        }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
         }
       }
     },
@@ -26684,6 +27020,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/android-arm": {
@@ -27304,6 +27654,20 @@
         },
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
+        }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
         }
       }
     },
@@ -27926,6 +28290,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/android-x64": {
@@ -28546,6 +28924,20 @@
         },
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
+        }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
         }
       }
     },
@@ -29168,6 +29560,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/iossimulator-x64": {
@@ -29789,6 +30195,20 @@
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
         }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        }
       }
     },
     "net8.0-windows10.0.19041/maccatalyst-x64": {
@@ -30409,6 +30829,20 @@
         },
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
+        }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
         }
       }
     },
@@ -31036,6 +31470,20 @@
         },
         "runtime": {
           "bin/placeholder/gx000serverSimComm.dll": {}
+        }
+      },
+      "gx000serverViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "gx000data": "1.0.0",
+          "gx000serverSimComm": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/gx000serverViewModel.dll": {}
         }
       }
     }
@@ -35283,6 +35731,11 @@
       "type": "project",
       "path": "../gx000serverSimComm/gx000serverSimComm.csproj",
       "msbuildProject": "../gx000serverSimComm/gx000serverSimComm.csproj"
+    },
+    "gx000serverViewModel/1.0.0": {
+      "type": "project",
+      "path": "../gx000serverViewModel/gx000serverViewModel.csproj",
+      "msbuildProject": "../gx000serverViewModel/gx000serverViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -35293,7 +35746,8 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.83",
       "Microsoft.NET.ILLink.Tasks >= 8.0.11",
       "System.Reactive >= 6.0.1",
-      "gx000data >= 1.0.0"
+      "gx000data >= 1.0.0",
+      "gx000serverViewModel >= 1.0.0"
     ],
     "net8.0-ios18.0": [
       "GeneralUtilities >= 1.0.0",
@@ -35302,7 +35756,8 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.83",
       "Microsoft.NET.ILLink.Tasks >= 8.0.11",
       "System.Reactive >= 6.0.1",
-      "gx000data >= 1.0.0"
+      "gx000data >= 1.0.0",
+      "gx000serverViewModel >= 1.0.0"
     ],
     "net8.0-maccatalyst18.0": [
       "GeneralUtilities >= 1.0.0",
@@ -35311,7 +35766,8 @@
       "Microsoft.Maui.Controls.Compatibility >= 8.0.83",
       "Microsoft.NET.ILLink.Tasks >= 8.0.11",
       "System.Reactive >= 6.0.1",
-      "gx000data >= 1.0.0"
+      "gx000data >= 1.0.0",
+      "gx000serverViewModel >= 1.0.0"
     ],
     "net8.0-windows10.0.19041": [
       "GeneralUtilities >= 1.0.0",
@@ -35319,7 +35775,8 @@
       "Microsoft.Maui.Controls >= 8.0.83",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.83",
       "System.Reactive >= 6.0.1",
-      "gx000data >= 1.0.0"
+      "gx000data >= 1.0.0",
+      "gx000serverViewModel >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -35364,6 +35821,9 @@
             },
             "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj": {
               "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj"
+            },
+            "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000serverViewModel\\gx000serverViewModel.csproj": {
+              "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000serverViewModel\\gx000serverViewModel.csproj"
             }
           }
         },
@@ -35375,6 +35835,9 @@
             },
             "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj": {
               "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj"
+            },
+            "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000serverViewModel\\gx000serverViewModel.csproj": {
+              "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000serverViewModel\\gx000serverViewModel.csproj"
             }
           }
         },
@@ -35386,6 +35849,9 @@
             },
             "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj": {
               "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj"
+            },
+            "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000serverViewModel\\gx000serverViewModel.csproj": {
+              "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000serverViewModel\\gx000serverViewModel.csproj"
             }
           }
         },
@@ -35397,6 +35863,9 @@
             },
             "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj": {
               "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000data\\gx000data.csproj"
+            },
+            "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000serverViewModel\\gx000serverViewModel.csproj": {
+              "projectPath": "C:\\Users\\AchttienbvMarcelAdri\\RiderProjects\\gx000touchpad\\gx000serverViewModel\\gx000serverViewModel.csproj"
             }
           }
         }

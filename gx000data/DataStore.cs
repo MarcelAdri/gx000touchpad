@@ -12,21 +12,36 @@
 //     */
 
 using System.Collections.Concurrent;
+using System.ComponentModel;
 
 namespace gx000data;
 
 /// <summary>
 /// Represents a data store that stores DataVariables.
 /// </summary>
-public class DataStore : IDataStore
+public class DataStore : IDataStore, INotifyPropertyChanged
 {
     /// <summary>
     /// Represents a store room for data variables.
     /// </summary>
     private readonly ConcurrentDictionary<string, Variable> _storeRoom = new();
     private readonly ConcurrentDictionary<string, Variable> _queue = new();
+    
+    private Variable _currentVariable;
+    public Variable CurrentVariable
+    {
+        get => _currentVariable;
+        set
+        {
+            _currentVariable = value;
+            OnPropertyChanged();
+        }
+    }
 
     private readonly object _lock = new();
+
+    public event PropertyChangedEventHandler? PropertyChanged;
+    
     /// <summary>
     /// Adds or updates a data variable in the store.
     /// </summary>
@@ -57,6 +72,7 @@ public class DataStore : IDataStore
         if (_storeRoom.TryGetValue(variableName, out Variable? data))
         {
             variable = data;
+            CurrentVariable = data;
             return true;
         }
 
@@ -104,4 +120,19 @@ public class DataStore : IDataStore
         }
         AddOrUpdateVariable(variable);
     }
+    
+    /// <summary>
+    /// Raises the PropertyChanged event.
+    /// </summary>
+    /// <param name="propertyName">
+    /// The name of the property that changed. This is optional and can be supplied automatically
+    /// by the CallerMemberName attribute.
+    /// </param>
+    private void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string? propertyName = null)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+
+
+    
 }
