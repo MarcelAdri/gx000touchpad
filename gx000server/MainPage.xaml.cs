@@ -1,10 +1,10 @@
-﻿using gx000serverViewModel;
+﻿using gx000data;
 
 namespace gx000server;
 
 public partial class MainPage : ContentPage
 {
-    private ViewModel _viewModel;
+    private gx000serverViewModel _viewModel;
     
     public MainPage()
     {
@@ -12,7 +12,7 @@ public partial class MainPage : ContentPage
         
         if (_viewModel == null)
         {
-            _viewModel = new ViewModel();    
+            _viewModel = new gx000serverViewModel();    
         }
         
         this.BindingContext = _viewModel;
@@ -22,9 +22,6 @@ public partial class MainPage : ContentPage
         {
             app.ViewModel = _viewModel;
         }
-
-       
-
     }
 
     protected override void OnDisappearing()

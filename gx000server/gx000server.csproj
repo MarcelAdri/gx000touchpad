@@ -70,7 +70,6 @@
     <ItemGroup>
       <ProjectReference Include="..\GeneralUtilities\GeneralUtilities.csproj" />
       <ProjectReference Include="..\gx000data\gx000data.csproj" />
-      <ProjectReference Include="..\gx000serverViewModel\gx000serverViewModel.csproj" />
     </ItemGroup>
 
 </Project>

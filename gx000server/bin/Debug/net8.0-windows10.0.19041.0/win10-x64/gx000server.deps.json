@@ -15,7 +15,6 @@
           "Microsoft.Maui.Controls.Compatibility": "8.0.83",
           "System.Reactive": "6.0.1",
           "gx000data": "1.0.0",
-          "gx000serverViewModel": "1.0.0",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.53"
         },
         "runtime": {
@@ -497,18 +496,6 @@
             "fileVersion": "1.0.0.0"
           }
         }
-      },
-      "gx000serverViewModel/1.0.0": {
-        "dependencies": {
-          "gx000data": "1.0.0",
-          "gx000serverSimComm": "1.0.0"
-        },
-        "runtime": {
-          "gx000serverViewModel.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
       }
     }
   },
@@ -709,11 +696,6 @@
       "sha512": ""
     },
     "gx000serverSimComm/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "gx000serverViewModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,10 +1,10 @@
-﻿using gx000serverViewModel;
+﻿using gx000data;
 
 namespace gx000server;
 
 public partial class App : Application
 {
-    public ViewModel ViewModel { get; set; }
+    public gx000serverViewModel ViewModel { get; set; }
     public App()
     {
         InitializeComponent();

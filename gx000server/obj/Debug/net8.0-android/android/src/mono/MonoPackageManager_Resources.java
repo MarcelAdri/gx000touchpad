@@ -141,7 +141,6 @@ public class MonoPackageManager_Resources {
 		"GeneralUtilities.dll",
 		"gx000data.dll",
 		"gx000serverSimComm.dll",
-		"gx000serverViewModel.dll",
 		"_Microsoft.Android.Resource.Designer.dll",
 	};
 	public static String[] Dependencies = new String[]{
