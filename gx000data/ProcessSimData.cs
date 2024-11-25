@@ -215,7 +215,7 @@ public class ProcessSimData : INotifyPropertyChanged, IDisposable
         CurrentVariable.SetCurrentTrigger(Variable.Triggers.SimSendsUpdate);
         Trigger = CurrentVariable.GetCurrentTrigger().ToString();
         
-        //gx000serverViewModel.ViewModel.DataStore.Store(CurrentVariable);
+        //gx000serverViewModel.Instance.Store.Store(CurrentVariable);
 
     }
 

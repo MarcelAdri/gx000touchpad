@@ -12,7 +12,7 @@ public partial class MainPage : ContentPage
         
         if (_viewModel == null)
         {
-            _viewModel = new gx000serverViewModel();    
+            _viewModel = gx000serverViewModel.Instance;  
         }
         
         this.BindingContext = _viewModel;
